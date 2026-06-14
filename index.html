@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarwar Computer Center | Best Computer Courses in Sarwad</title>
+    <title>Sarwar Computer Center | Best Computer Courses in Sarwar</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -70,6 +70,10 @@
             .float-call { padding: 0; width: 60px; justify-content: center; left: 20px; bottom: 20px;}
             .float-wa { right: 20px; bottom: 20px; }
         }
+
+        /* Group Dropdown Styling */
+        optgroup { font-weight: bold; color: #0f172a; font-style: normal; }
+        option { font-weight: normal; color: #374151; }
     </style>
 </head>
 <body>
@@ -144,7 +148,7 @@
     <!-- Why Choose Us -->
     <section id="about" class="py-20 bg-white">
         <div class="container mx-auto px-4 text-center">
-            <h3 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4" data-aos="fade-up">सरवाड़ कंप्यूटर सेण्टर ही क्यूँ ?:</h3>
+            <h3 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4" data-aos="fade-up">सरवाड़ कंप्यूटर सेण्टर ही क्यूँ ?:</h3>
             <div class="w-24 h-1.5 bg-brand-orange mx-auto mb-12 rounded-full" data-aos="zoom-in" data-aos-delay="200"></div>
             
             <div class="grid md:grid-cols-3 gap-8">
@@ -302,7 +306,7 @@
         <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center mt-10">
             <div data-aos="fade-right">
                 <h3 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">नए बैच के लिए <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-300">एडमिशन शुरू हो चुके हैं!</span></h3>
-                <p class="text-lg mb-8 text-gray-300">सीट्स लिमिटेड हैं! नीचे दिया गया फॉर्म भरें और हमारी टीम आपसे तुरंत संपर्क करेगी।</p>
+                <p class="text-lg mb-8 text-gray-300">सीट्स लिमिटेड हैं! दिया गया फॉर्म भरें और हमारी टीम आपसे तुरंत संपर्क करेगी।</p>
                 
                 <div class="bg-white text-gray-800 p-8 rounded-3xl shadow-2xl relative">
                     <div class="absolute -top-5 -right-5 bg-brand-orange text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg transform rotate-12"><i class="fa-solid fa-paper-plane"></i></div>
@@ -320,17 +324,44 @@
                             <label class="block text-sm font-bold mb-2 text-gray-600">मोबाइल नंबर</label>
                             <input type="tel" id="mobile" required pattern="[0-9]{10}" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-orange transition" placeholder="10 Digit Number">
                         </div>
+                        
+                        <!-- Updated Courses Dropdown with Categories and Counseling Option -->
                         <div class="mb-6">
-                            <label class="block text-sm font-bold mb-2 text-gray-600">कोर्स चुनें</label>
+                            <label class="block text-sm font-bold mb-2 text-gray-600">कोर्स चुनें / विषय</label>
                             <select id="course" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-orange transition">
-                                <option value="">-- कोर्स चुनें --</option>
-                                <option value="RS-CIT (Mega Offer)">RS-CIT + 2 Free Courses</option>
-                                <option value="Tally Prime (Mega Offer)">Tally Prime + 2 Free Courses</option>
-                                <option value="AI & Graphic Design">AI & Graphic Design</option>
-                                <option value="Advance Excel / AI">Advance Excel / AI</option>
-                                <option value="Other">Other / Counseling needed</option>
+                                <option value="">-- कृपया चुनें --</option>
+                                
+                                <optgroup label="🔥 मेगा ऑफर कोर्सेस">
+                                    <option value="RS-CIT (Mega Offer)">RS-CIT + 2 Free Courses</option>
+                                    <option value="Tally Prime (Mega Offer)">Tally Prime + 2 Free Courses</option>
+                                </optgroup>
+                                
+                                <optgroup label="💻 Core IT & Digital Literacy">
+                                    <option value="RS-CIT">RS-CIT</option>
+                                    <option value="RS-CIT-AI">RS-CIT-AI</option>
+                                    <option value="RCDTP">RCDTP (Desktop Publishing)</option>
+                                    <option value="RC-MOS">RC-MOS (MS Office Specialist)</option>
+                                </optgroup>
+                                
+                                <optgroup label="💰 Finance & Accounting">
+                                    <option value="Tally Prime">Tally Prime</option>
+                                    <option value="RS-CFA">RS-CFA (Financial Accounting)</option>
+                                </optgroup>
+                                
+                                <optgroup label="🎨 Vocational & Advanced Skills">
+                                    <option value="Advance Excel / AI">Advance Excel / AI</option>
+                                    <option value="AI Prompt Engineering">AI Prompt Engineering</option>
+                                    <option value="Graphic & Web Designing">Graphic & Web Designing</option>
+                                    <option value="Digital Marketing">Digital Marketing</option>
+                                    <option value="RS-CEE">RS-CEE (Spoken English)</option>
+                                </optgroup>
+                                
+                                <optgroup label="🤝 अन्य जानकारी">
+                                    <option value="Counseling Needed">काउंसलिंग / Other Help चाहिए</option>
+                                </optgroup>
                             </select>
                         </div>
+
                         <button type="submit" class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white font-bold py-4 rounded-xl hover:from-green-600 hover:to-green-700 transition shadow-lg flex justify-center items-center gap-2 text-lg transform hover:-translate-y-1">
                             <i class="fa-brands fa-whatsapp text-2xl"></i> WhatsApp पर भेजें
                         </button>
@@ -421,7 +452,7 @@
             const course = document.getElementById('course').value;
             
             const whatsappNumber = "919251000209";
-            const message = `*New Admission Inquiry!* %0A%0A👤 *Name:* ${name} %0A📍 *Address:* ${address} %0A📱 *Mobile:* ${mobile} %0A💻 *Course:* ${course} %0A%0A_Sent via Website_`;
+            const message = `*New Admission Inquiry!* %0A%0A👤 *Name:* ${name} %0A📍 *Address:* ${address} %0A📱 *Mobile:* ${mobile} %0A💻 *Course/Query:* ${course} %0A%0A_Sent via Website_`;
             
             window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
             document.getElementById('admissionForm').reset();
