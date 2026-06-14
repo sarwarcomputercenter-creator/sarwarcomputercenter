@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarwar Computer Center | Best Computer Courses in Sarwad</title>
     
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
+    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap" rel="stylesheet">
     
+    <!-- AOS Animation Library CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <style>
@@ -75,6 +79,7 @@
 </head>
 <body>
 
+    <!-- Sticky Social Media Bar (Desktop Only) -->
     <div class="sticky-social">
         <a href="https://www.youtube.com/@sarwarcomputer" target="_blank" class="social-yt" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
         <a href="https://www.instagram.com/sarwarcomputercenter/" target="_blank" class="social-ig" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -82,8 +87,10 @@
         <a href="https://maps.google.com/maps?q=26.0650966,75.0154186&t=&z=17&ie=UTF8&iwloc=&output=embed" target="_blank" class="social-map" title="Google Maps"><i class="fa-solid fa-map-location-dot"></i></a>
     </div>
 
+    <!-- Header -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-50 top-0 border-b border-gray-100">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo Section -->
             <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
                 <img src="logo sarwar computer center.jpeg" alt="Sarwar Computer Center Logo" class="w-12 h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-brand-orange object-cover bg-white">
                 <h1 class="text-xl md:text-2xl font-bold text-brand-blue leading-tight tracking-tight">सरवाड़ कम्प्यूटर<br><span class="text-brand-orange text-xs md:text-sm">सेन्टर</span></h1>
@@ -99,10 +106,13 @@
         </div>
     </header>
 
+    <!-- Animated Hero Section with Background Photo -->
     <section id="home" class="pt-28 pb-16 md:pt-32 md:pb-20 bg-brand-blue text-white relative overflow-hidden">
         
+        <!-- ✨ Background Image Overlay (आपके सेंटर के बच्चों की फोटो) -->
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Students studying computer" class="w-full h-full object-cover opacity-20">
+            <!-- यहाँ आपकी असली फोटो students.jpg लगाई गई है -->
+            <img src="students.jpg" alt="Students studying computer" class="w-full h-full object-cover opacity-20">
             <div class="absolute inset-0 bg-gradient-to-r from-brand-blue via-brand-blue/85 to-brand-blue/50"></div>
         </div>
 
@@ -128,11 +138,13 @@
                     </div>
                 </div>
 
+                <!-- ✨ Buttons and Social Icons -->
                 <div class="flex flex-col xl:flex-row gap-5 items-start xl:items-center" data-aos="fade-up" data-aos-delay="500">
                     <a href="#admission" class="bg-brand-orange text-white px-8 py-3.5 rounded-full font-bold text-lg hover:bg-orange-600 transition shadow-lg shadow-orange-500/40 flex items-center justify-center gap-2 whitespace-nowrap">
                         आज ही एडमिशन लेवें <i class="fa-solid fa-arrow-right"></i>
                     </a>
                     
+                    <!-- Social Icons Row for Hero Section -->
                     <div class="flex gap-3 justify-center items-center">
                         <a href="https://www.youtube.com/@sarwarcomputer" target="_blank" class="w-12 h-12 rounded-full bg-white/10 border border-white/30 flex items-center justify-center text-xl hover:bg-red-600 text-white transition backdrop-blur-sm shadow-lg"><i class="fa-brands fa-youtube"></i></a>
                         <a href="https://www.instagram.com/sarwarcomputercenter/" target="_blank" class="w-12 h-12 rounded-full bg-white/10 border border-white/30 flex items-center justify-center text-xl hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600 text-white transition backdrop-blur-sm shadow-lg"><i class="fa-brands fa-instagram"></i></a>
@@ -141,9 +153,15 @@
                     </div>
                 </div>
             </div>
+            
+            <div data-aos="fade-left" data-aos-duration="1200" class="relative hidden lg:block">
+                <div class="absolute inset-0 bg-gradient-to-tr from-brand-orange to-blue-500 rounded-3xl transform rotate-3 scale-105 opacity-50 blur-lg"></div>
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Student learning" class="rounded-3xl shadow-2xl relative z-10 border-4 border-white/10 object-cover h-[500px] w-full floating-element" style="animation-duration: 8s;">
+            </div>
         </div>
     </section>
 
+    <!-- Why Choose Us -->
     <section id="about" class="py-16 md:py-20 bg-white">
         <div class="container mx-auto px-4 text-center">
             <h3 class="text-2xl md:text-4xl font-bold text-brand-blue mb-4" data-aos="fade-up">सरवाड़ कम्प्यूटर सेण्टर ही क्यूँ ?:</h3>
@@ -169,6 +187,7 @@
         </div>
     </section>
 
+    <!-- Courses Section -->
     <section id="courses" class="py-16 md:py-20 bg-gray-50 border-t border-gray-200">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
@@ -177,6 +196,7 @@
                 <div class="w-24 h-1.5 bg-brand-orange mx-auto mt-4 md:mt-6 rounded-full"></div>
             </div>
 
+            <!-- 👩‍🎓 Special Scheme for Women -->
             <div class="mb-10 md:mb-12" data-aos="fade-up">
                 <h4 class="text-xl md:text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3"><span class="bg-pink-100 text-pink-600 p-2 rounded-lg"><i class="fa-solid fa-person-dress"></i></span> सरकारी योजना (Government Scheme)</h4>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
@@ -189,6 +209,7 @@
                 </div>
             </div>
 
+            <!-- Category 1: Core IT -->
             <div class="mb-10 md:mb-12" data-aos="fade-up">
                 <h4 class="text-xl md:text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3"><span class="bg-blue-100 text-blue-600 p-2 rounded-lg"><i class="fa-solid fa-laptop-code"></i></span> Core IT & Digital Literacy</h4>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
@@ -215,6 +236,7 @@
                 </div>
             </div>
 
+            <!-- Category 2: Finance -->
             <div class="mb-10 md:mb-12" data-aos="fade-up">
                 <h4 class="text-xl md:text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3"><span class="bg-green-100 text-green-600 p-2 rounded-lg"><i class="fa-solid fa-chart-pie"></i></span> Finance & Accounting</h4>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
@@ -231,6 +253,7 @@
                 </div>
             </div>
 
+            <!-- Category 3: Vocational -->
             <div data-aos="fade-up">
                 <h4 class="text-xl md:text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3"><span class="bg-purple-100 text-purple-600 p-2 rounded-lg"><i class="fa-solid fa-palette"></i></span> Vocational & Advanced Skills</h4>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
@@ -264,6 +287,7 @@
         </div>
     </section>
 
+    <!-- Video Gallery Section -->
     <section id="gallery" class="py-16 md:py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-10 md:mb-12" data-aos="fade-up">
@@ -273,10 +297,11 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <!-- YouTube Highlight -->
                 <div data-aos="fade-up">
                     <h4 class="text-lg md:text-xl font-bold mb-4 flex items-center gap-2"><i class="fa-brands fa-youtube text-red-600 text-2xl"></i> YouTube चैनल</h4>
                     <a href="https://www.youtube.com/@sarwarcomputer" target="_blank" class="block relative rounded-2xl overflow-hidden shadow-xl video-card cursor-pointer group">
-                        <img <img src="students.jpg" alt="Students studying computer" class="w-full h-full object-cover opacity-20">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="YouTube Thumbnail" class="w-full h-48 md:h-64 object-cover transform group-hover:scale-110 transition duration-500">
                         <div class="absolute inset-0 video-overlay flex items-center justify-center">
                             <i class="fa-brands fa-youtube text-white text-5xl md:text-6xl play-icon transition duration-300 drop-shadow-lg"></i>
                         </div>
@@ -286,6 +311,7 @@
                     </a>
                 </div>
 
+                <!-- Instagram Highlight -->
                 <div data-aos="fade-up" data-aos-delay="100">
                     <h4 class="text-lg md:text-xl font-bold mb-4 flex items-center gap-2"><i class="fa-brands fa-instagram text-pink-600 text-2xl"></i> Instagram रील्स</h4>
                     <a href="https://www.instagram.com/sarwarcomputercenter/" target="_blank" class="block relative rounded-2xl overflow-hidden shadow-xl video-card cursor-pointer group">
@@ -308,6 +334,7 @@
         </div>
     </section>
 
+    <!-- Admission / Contact Section -->
     <section id="admission" class="py-16 md:py-20 bg-brand-blue text-white relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-8 md:h-12 fill-white">
@@ -392,6 +419,7 @@
         </div>
     </section>
 
+    <!-- Modern Footer -->
     <footer id="contact" class="bg-gray-900 text-gray-400 py-12 md:py-16 border-t-4 border-brand-orange">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
             <div class="md:col-span-2 text-center md:text-left">
@@ -432,6 +460,7 @@
         </div>
     </footer>
 
+    <!-- Floating Sticky Action Buttons -->
     <a href="tel:9251000209" class="float-call" title="Call Now">
         <i class="fa-solid fa-phone-volume"></i>
         <span>Call Now : +91 9251000209</span>
@@ -441,6 +470,7 @@
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         // Initialize Animations
