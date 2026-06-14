@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarwar Computer Center | Best Computer Courses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif; overflow-x: hidden; scroll-behavior: smooth; }
+        
+        /* Brand Colors based on your Logo */
+        .bg-brand-blue { background-color: #1e3a5f; }
+        .text-brand-blue { color: #1e3a5f; }
+        .bg-brand-orange { background-color: #f26b21; }
+        .text-brand-orange { color: #f26b21; }
+        .hover-brand-orange:hover { background-color: #d95a1a; }
+
+        /* Motion Graphics & Animations */
+        .reveal { opacity: 0; transform: translateY(50px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .zoom-in { opacity: 0; transform: scale(0.8); transition: all 0.8s ease-out; }
+        .zoom-in.active { opacity: 1; transform: scale(1); }
+        
+        .course-card { transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer; }
+        .course-card:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+        
+        /* Floating WhatsApp Button */
+        .float-wa { position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 2px 3px #999; z-index: 100; animation: pulse-green 2s infinite; }
+        .float-wa i { margin-top: 16px; }
+
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold text-xl">SCC</div>
+                <h1 class="text-2xl font-bold text-brand-blue leading-tight">सरवाड़ कंप्यूटर<br><span class="text-brand-orange text-sm">सेंटर</span></h1>
+            </div>
+            <nav class="hidden md:flex gap-6 font-semibold">
+                <a href="#home" class="hover:text-brand-orange transition">Home</a>
+                <a href="#about" class="hover:text-brand-orange transition">About</a>
+                <a href="#courses" class="hover:text-brand-orange transition">Courses</a>
+                <a href="#contact" class="hover:text-brand-orange transition">Contact Us</a>
+            </nav>
+            <a href="#admission" class="bg-brand-orange text-white px-5 py-2 rounded-full font-bold hover:bg-orange-600 transition shadow-lg animate-bounce">Admission Open</a>
+        </div>
+    </header>
+
+    <section id="home" class="pt-28 pb-16 bg-brand-blue text-white overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-orange rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-pulse"></div>
+        
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center relative z-10">
+            <div class="reveal">
+                <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">क्या आप भी डिजिटल दुनिया में अपना शानदार करियर बनाना चाहते हैं? 🚀💻</h2>
+                <p class="text-lg mb-6 text-gray-200">आज के समय में कंप्यूटर स्किल्स के बिना बेहतरीन जॉब पाना मुश्किल है। Sarwar Computer Center लाया है आपके लिए सबसे एडवांस कंप्यूटर कोर्सेस!</p>
+                
+                <div class="bg-gradient-to-r from-orange-500 to-yellow-500 p-4 rounded-xl shadow-lg border-2 border-white mb-8 zoom-in">
+                    <p class="text-xl font-bold text-white text-center">🔥 मेगा ऑफर: कोई भी एक कोर्स करें, और उसके साथ <br><span class="text-2xl text-yellow-200">2 कोर्स (AI & Graphic Design) बिल्कुल फ्री पाएं!</span></p>
+                </div>
+
+                <div class="flex gap-4">
+                    <a href="#admission" class="bg-white text-brand-blue px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-xl">एडमिशन लें</a>
+                    <a href="#courses" class="border-2 border-white text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-white hover:text-brand-blue transition">कोर्सेस देखें</a>
+                </div>
+            </div>
+            <div class="zoom-in">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Students learning computer" class="rounded-2xl shadow-2xl border-4 border-white">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center reveal">
+            <h3 class="text-3xl font-bold text-brand-blue mb-4">यहाँ आपको मिलेगी:</h3>
+            <div class="w-24 h-1 bg-brand-orange mx-auto mb-10"></div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-5xl mb-4">👨‍🏫</div>
+                    <h4 class="text-xl font-bold mb-2">एक्सपर्ट फैकल्टी</h4>
+                    <p class="text-gray-600">अनुभवी शिक्षकों द्वारा श्रेष्ठ मार्गदर्शन।</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-5xl mb-4">🖥️</div>
+                    <h4 class="text-xl font-bold mb-2">100% प्रैक्टिकल ट्रेनिंग</h4>
+                    <p class="text-gray-600">आधुनिक कंप्यूटर लैब में हैंड्स-ऑन प्रैक्टिस।</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition">
+                    <div class="text-5xl mb-4">🎯</div>
+                    <h4 class="text-xl font-bold mb-2">बेहतरीन जॉब गाइडेंस</h4>
+                    <p class="text-gray-600">कोर्स के बाद सही करियर चुनने में पूरी मदद।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 reveal">
+                <h3 class="text-3xl font-bold text-brand-blue mb-2">हमारे प्रमुख कोर्सेस</h3>
+                <p class="text-gray-600">किसी भी कोर्स पर क्लिक करें और सीधे WhatsApp पर जानकारी प्राप्त करें।</p>
+                <div class="w-24 h-1 bg-brand-orange mx-auto mt-4"></div>
+            </div>
+
+            <h4 class="text-2xl font-bold text-gray-800 mb-6 border-l-4 border-brand-orange pl-3 reveal">💻 Core IT & Digital Literacy Programs</h4>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 reveal">
+                <div onclick="inquireCourse('RS-CIT')" class="course-card bg-white p-6 rounded-xl border-t-4 border-blue-500">
+                    <h5 class="text-lg font-bold text-brand-blue mb-2">RS-CIT</h5>
+                    <p class="text-sm text-gray-600">Rajasthan State Certificate in Information Technology (Foundational).</p>
+                </div>
+                <div onclick="inquireCourse('RS-CIT-AI')" class="course-card bg-white p-6 rounded-xl border-t-4 border-blue-500">
+                    <h5 class="text-lg font-bold text-brand-blue mb-2">RS-CIT-AI</h5>
+                    <p class="text-sm text-gray-600">Digital literacy combined with modern AI integration tools.</p>
+                </div>
+                <div onclick="inquireCourse('RCDTP')" class="course-card bg-white p-6 rounded-xl border-t-4 border-blue-500">
+                    <h5 class="text-lg font-bold text-brand-blue mb-2">RCDTP</h5>
+                    <p class="text-sm text-gray-600">Desktop Publishing (CorelDraw, Photoshop).</p>
+                </div>
+                <div onclick="inquireCourse('RC-MOS')" class="course-card bg-white p-6 rounded-xl border-t-4 border-blue-500">
+                    <h5 class="text-lg font-bold text-brand-blue mb-2">RC-MOS</h5>
+                    <p class="text-sm text-gray-600">Microsoft Office Specialist (Word, Excel, PowerPoint).</p>
+                </div>
+            </div>
+
+            <h4 class="text-2xl font-bold text-gray-800 mb-6 border-l-4 border-green-500 pl-3 reveal">💰 Finance & Accounting Courses</h4>
+            <div class="grid md:grid-cols-2 gap-6 mb-10 reveal">
+                <div onclick="inquireCourse('RS-CFA')" class="course-card bg-white p-6 rounded-xl border-t-4 border-green-500">
+                    <h5 class="text-lg font-bold text-brand-blue mb-2">RS-CFA</h5>
+                    <p class="text-sm text-gray-600">Financial Accounting covering basic accounting and Tally.</p>
+                </div>
+                <div onclick="inquireCourse('Tally Prime')" class="course-card bg-white p-6 rounded-xl border-t-4 border-green-500">
+                    <h5 class="text-lg font-bold text-brand-blue mb-2">Tally Prime</h5>
+                    <p class="text-sm text-gray-600">Essential & Professional Industry-standard accounting.</p>
+                </div>
+            </div>
+
+            <h4 class="text-2xl font-bold text-gray-800 mb-6 border-l-4 border-purple-500 pl-3 reveal">🎨 Vocational & Advanced Skills</h4>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+                <div onclick="inquireCourse('Advance Excel / AI')" class="course-card bg-white p-6 rounded-xl border-t-4 border-purple-500">
+                    <h5 class="text-lg font-bold text-brand-blue mb-2">Advance Excel / AI</h5>
+                    <p class="text-sm text-gray-600">Smart Excel productivity, reporting, and AI dashboards.</p>
+                </div>
+                <div onclick="inquireCourse('AI Prompt Engineering')" class="course-card bg-white p-6 rounded-xl border-t-4 border-purple-500">
+                    <h5 class="text-lg font-bold text-brand-blue mb-2">AI Prompt Engineering</h5>
+                    <p class="text-sm text-gray-600">Workflow automation and generative AI skills.</p>
+                </div>
+                <div onclick="inquireCourse('Digital Marketing')" class="course-card bg-white p-6 rounded-xl border-t-4 border-purple-500">
+                    <h5 class="text-lg font-bold text-brand-blue mb-2">Digital Marketing</h5>
+                    <p class="text-sm text-gray-600">Basic and Advanced digital marketing strategies.</p>
+                </div>
+                <div onclick="inquireCourse('Graphic & Web Designing')" class="course-card bg-white p-6 rounded-xl border-t-4 border-purple-500">
+                    <h5 class="text-lg font-bold text-brand-blue mb-2">Graphic & Web Designing</h5>
+                    <p class="text-sm text-gray-600">UI/UX, Advanced Graphic Design, and Web Development.</p>
+                </div>
+                <div onclick="inquireCourse('RS-CEE')" class="course-card bg-white p-6 rounded-xl border-t-4 border-purple-500">
+                    <h5 class="text-lg font-bold text-brand-blue mb-2">RS-CEE</h5>
+                    <p class="text-sm text-gray-600">Spoken English and personality development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="admission" class="py-16 bg-brand-blue text-white">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+            <div class="reveal">
+                <h3 class="text-4xl font-bold mb-4">सफलता का इंतज़ार मत करें,<br><span class="text-brand-orange">उसकी शुरुआत आज ही करें!</span></h3>
+                <p class="text-lg mb-6">सीट्स लिमिटेड हैं, जल्दी करें! नीचे दिया गया फॉर्म भरें और हमारी टीम आपसे तुरंत संपर्क करेगी।</p>
+                
+                <div class="bg-white text-gray-800 p-6 rounded-xl shadow-2xl">
+                    <h4 class="text-2xl font-bold text-center mb-6 text-brand-blue">एडमिशन फॉर्म</h4>
+                    <form id="admissionForm" onsubmit="submitForm(event)">
+                        <div class="mb-4">
+                            <label class="block text-sm font-bold mb-2">पूरा नाम (Name)</label>
+                            <input type="text" id="name" required class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-brand-orange">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-bold mb-2">पता (Address)</label>
+                            <input type="text" id="address" required class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-brand-orange">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-bold mb-2">मोबाइल नंबर (Mobile Number)</label>
+                            <input type="tel" id="mobile" required pattern="[0-9]{10}" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-brand-orange" placeholder="10 Digit Number">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-bold mb-2">कोर्स चुनें (Select Course)</label>
+                            <select id="course" required class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-brand-orange">
+                                <option value="">-- कोर्स चुनें --</option>
+                                <option value="RS-CIT (Offer)">RS-CIT + 2 Free Courses</option>
+                                <option value="Tally Prime (Offer)">Tally Prime + 2 Free Courses</option>
+                                <option value="RS-CIT-AI">RS-CIT-AI</option>
+                                <option value="Advance Excel / AI">Advance Excel / AI</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="Graphic & Web Designing">Graphic & Web Designing</option>
+                                <option value="Other">Other / Counseling needed</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-orange text-white font-bold py-3 rounded-lg hover:bg-orange-600 transition flex justify-center items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp पर भेजें
+                        </button>
+                        <p class="text-xs text-center mt-3 text-gray-500">आपकी डिटेल सीधे हमारे WhatsApp और Email पर आ जाएगी।</p>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="reveal">
+                <div class="bg-white p-2 rounded-xl shadow-lg">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14300.957640428938!2d75.00010839017688!3d26.04604928254825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c21e6c3826ba7%3A0x6b1cc42220d5f854!2sSarwar%2C%20Rajasthan%20305403!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" width="100%" height="450" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8 mb-8 border-b border-gray-700 pb-8">
+            <div>
+                <h4 class="text-xl font-bold text-white mb-4">Sarwar Computer Center</h4>
+                <p class="mb-4"><i class="fa-solid fa-location-dot text-brand-orange mr-2"></i> सीनियर सेकेंडरी स्कूल रोड, पथवारी के सामने, सरवाड़</p>
+                <p class="mb-2"><i class="fa-solid fa-phone text-brand-orange mr-2"></i> <a href="tel:9251000209" class="hover:text-white">+91 9251000209</a></p>
+                <p><i class="fa-solid fa-envelope text-brand-orange mr-2"></i> <a href="mailto:sarwarcomputercenter@gmail.com" class="hover:text-white">sarwarcomputercenter@gmail.com</a></p>
+            </div>
+            
+            <div>
+                <h4 class="text-xl font-bold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#about" class="hover:text-brand-orange transition">हमारे बारे में (About Us)</a></li>
+                    <li><a href="#contact" class="hover:text-brand-orange transition">संपर्क करें (Contact Us)</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition" onclick="alert('Privacy Policy Page Content Here')">गोपनीयता नीति (Privacy Policy)</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition" onclick="alert('Terms & Conditions Page Content Here')">नियम और शर्तें (Terms & Conditions)</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition" onclick="alert('Disclaimer Page Content Here')">अस्वीकरण (Disclaimer)</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-xl font-bold text-white mb-4">Follow Us</h4>
+                <a href="https://www.instagram.com/sarwarcomputercenter/" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-xl hover:bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 hover:text-white transition shadow-lg">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="text-center text-sm">
+            <p>&copy; 2024 Sarwar Computer Center. All Rights Reserved. | Designed with ❤️</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919251000209?text=Hello%20Sarwar%20Computer%20Center,%20I%20want%20to%20know%20more%20about%20your%20courses." class="float-wa" target="_blank" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Form Submission to WhatsApp
+        function submitForm(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const address = document.getElementById('address').value;
+            const mobile = document.getElementById('mobile').value;
+            const course = document.getElementById('course').value;
+            
+            const whatsappNumber = "919251000209";
+            const message = `*New Admission Inquiry!* %0A%0A*Name:* ${name} %0A*Address:* ${address} %0A*Mobile:* ${mobile} %0A*Interested Course:* ${course} %0A%0A_Sent via Website_`;
+            
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+            
+            // Open WhatsApp in new tab
+            window.open(whatsappURL, '_blank');
+            
+            // Optional: Also trigger an email client to open (Mailto)
+            const email = "sarwarcomputercenter@gmail.com";
+            const subject = "New Admission Inquiry from Website";
+            const emailBody = `Name: ${name}%0D%0AAddress: ${address}%0D%0AMobile: ${mobile}%0D%0AInterested Course: ${course}`;
+            // Uncomment the line below if you want the email app to open alongside WhatsApp
+            // window.location.href = `mailto:${email}?subject=${subject}&body=${emailBody}`;
+
+            // Reset form
+            document.getElementById('admissionForm').reset();
+            alert('आपकी जानकारी WhatsApp पर भेजने के लिए तैयार है!');
+        }
+
+        // Course Click to WhatsApp Function
+        function inquireCourse(courseName) {
+            const whatsappNumber = "919251000209";
+            const message = `नमस्ते! मैं आपके सेंटर से *${courseName}* कोर्स की जानकारी लेना चाहता/चाहती हूँ। कृपया मुझे इसकी फीस और बैच की जानकारी दें।`;
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+            
+            window.open(whatsappURL, '_blank');
+        }
+
+        // Scroll Animations (Intersection Observer)
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal, .zoom-in");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        // Trigger once on load
+        reveal();
+    </script>
+</body>
+</html>
