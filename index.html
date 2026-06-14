@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarwar Computer Center | Best Computer Courses</title>
+    <title>Sarwar Computer Center | Best Computer Courses in Sarwad</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -31,6 +31,11 @@
         .course-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         .course-card:hover { transform: translateY(-15px) scale(1.03); box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.15); border-color: #ea580c; }
         
+        /* Video Gallery Overlay */
+        .video-overlay { background: rgba(0,0,0,0.4); transition: all 0.3s ease; }
+        .video-card:hover .video-overlay { background: rgba(0,0,0,0.1); }
+        .video-card:hover .play-icon { transform: scale(1.2); color: #ea580c; }
+
         /* Floating Elements Animation */
         @keyframes float {
             0% { transform: translateY(0px); }
@@ -39,7 +44,7 @@
         }
         .floating-element { animation: float 6s ease-in-out infinite; }
 
-        /* Sticky Social Bar */
+        /* Sticky Social Bar (Desktop) */
         .sticky-social { position: fixed; top: 50%; left: 0; transform: translateY(-50%); z-index: 100; display: flex; flex-direction: column; gap: 5px; }
         .sticky-social a { width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; transition: all 0.3s; border-radius: 0 10px 10px 0; box-shadow: 2px 2px 5px rgba(0,0,0,0.2); margin-left: -5px; }
         .sticky-social a:hover { width: 60px; margin-left: 0; }
@@ -48,17 +53,30 @@
         .social-fb { background-color: #1877f2; }
         .social-map { background-color: #34a853; }
 
-        /* Floating WhatsApp Button */
+        /* Floating WhatsApp Button (Right) */
         .float-wa { position: fixed; width: 60px; height: 60px; bottom: 30px; right: 30px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 32px; box-shadow: 0px 4px 10px rgba(0,0,0,0.3); z-index: 100; transition: transform 0.3s; }
         .float-wa:hover { transform: scale(1.1) rotate(10deg); }
         .float-wa i { margin-top: 14px; }
+
+        /* Floating Call Button (Left) */
+        .float-call { position: fixed; height: 60px; bottom: 30px; left: 30px; background-color: #2563eb; color: #FFF; border-radius: 50px; display: flex; align-items: center; justify-content: center; padding: 0 25px; gap: 10px; font-size: 18px; font-weight: bold; box-shadow: 0px 4px 10px rgba(0,0,0,0.3); z-index: 100; transition: all 0.3s; }
+        .float-call:hover { transform: scale(1.05); background-color: #1d4ed8; }
+        .float-call i { animation: ring 2s infinite; font-size: 22px; }
+        @keyframes ring { 0% { transform: rotate(0); } 10% { transform: rotate(15deg); } 20% { transform: rotate(-15deg); } 30% { transform: rotate(15deg); } 40% { transform: rotate(-15deg); } 50% { transform: rotate(0); } }
+
+        /* Hide text on very small mobile screens to save space */
+        @media (max-width: 480px) {
+            .float-call span { display: none; }
+            .float-call { padding: 0; width: 60px; justify-content: center; left: 20px; bottom: 20px;}
+            .float-wa { right: 20px; bottom: 20px; }
+        }
     </style>
 </head>
 <body>
 
     <!-- Sticky Social Media Bar -->
     <div class="sticky-social hidden md:flex">
-        <a href="#" target="_blank" class="social-yt" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.youtube.com/@sarwarcomputer" target="_blank" class="social-yt" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
         <a href="https://www.instagram.com/sarwarcomputercenter/" target="_blank" class="social-ig" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
         <a href="#" target="_blank" class="social-fb" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
         <a href="https://maps.app.goo.gl/mLVwv9MErb9715jDA" target="_blank" class="social-map" title="Google Maps"><i class="fa-solid fa-map-location-dot"></i></a>
@@ -75,6 +93,7 @@
                 <a href="#home" class="hover:text-brand-orange transition">Home</a>
                 <a href="#about" class="hover:text-brand-orange transition">About</a>
                 <a href="#courses" class="hover:text-brand-orange transition">Courses</a>
+                <a href="#gallery" class="hover:text-brand-orange transition">Gallery</a>
                 <a href="#contact" class="hover:text-brand-orange transition">Contact</a>
             </nav>
             <a href="#admission" class="bg-brand-orange text-white px-6 py-2.5 rounded-full font-bold hover:bg-orange-600 transition shadow-lg shadow-orange-500/30 hover:scale-105 transform duration-300">Admission Open</a>
@@ -92,10 +111,10 @@
                     ⭐ सरवाड़ का सर्वश्रेष्ठ कंप्यूटर सेंटर
                 </div>
                 <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-                   डिजिटल दुनिया में शानदार करियर 🚀💻
+                    डिजिटल दुनिया में रहे आगे🚀💻
                 </h2>
                 <p class="text-lg md:text-xl mb-8 text-gray-300 font-medium leading-relaxed">
-                    आज के समय में कंप्यूटर स्किल्स के बिना बेहतरीन जॉब पाना मुश्किल है। <strong class="text-white">Sarwar Computer Center</strong> सबसे एडवांस कंप्यूटर कोर्सेस!
+                   "अपने करियर को दें नई उड़ान, एडवांस कंप्यूटर स्किल्स के साथ!" <strong class="text-white">Sarwar Computer Center</strong> लाया है आपके लिए सबसे एडवांस कंप्यूटर कोर्सेस!
                 </p>
                 
                 <div class="bg-gradient-to-r from-orange-600 to-yellow-500 p-1 rounded-2xl shadow-2xl mb-8 transform transition hover:scale-[1.02]" data-aos="zoom-in" data-aos-delay="300">
@@ -109,8 +128,8 @@
                     <a href="#admission" class="bg-brand-orange text-white px-8 py-3.5 rounded-full font-bold text-lg hover:bg-orange-600 transition shadow-lg shadow-orange-500/40 flex items-center gap-2">
                         एडमिशन लें <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="https://www.youtube.com/" target="_blank" class="bg-white/10 border border-white/30 text-white px-8 py-3.5 rounded-full font-bold text-lg hover:bg-white hover:text-brand-blue transition flex items-center gap-2">
-                        <i class="fa-brands fa-youtube text-red-500"></i> वीडियो देखें
+                    <a href="https://www.youtube.com/@sarwarcomputer" target="_blank" class="bg-white/10 border border-white/30 text-white px-8 py-3.5 rounded-full font-bold text-lg hover:bg-white hover:text-brand-blue transition flex items-center gap-2">
+                        <i class="fa-brands fa-youtube text-red-500"></i> YouTube वीडियो
                     </a>
                 </div>
             </div>
@@ -225,11 +244,57 @@
         </div>
     </section>
 
+    <!-- Video Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h3 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4">हमारी गैलरी (Videos)</h3>
+                <p class="text-gray-600 text-lg">हमारे सेंटर की झलकियां, कोर्सेस और छात्रों के अनुभव देखें।</p>
+                <div class="w-24 h-1.5 bg-brand-orange mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- YouTube Highlight -->
+                <div data-aos="fade-right">
+                    <h4 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fa-brands fa-youtube text-red-600 text-2xl"></i> YouTube चैनल</h4>
+                    <a href="https://www.youtube.com/@sarwarcomputer" target="_blank" class="block relative rounded-2xl overflow-hidden shadow-xl video-card cursor-pointer group">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="YouTube Thumbnail" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 video-overlay flex items-center justify-center">
+                            <i class="fa-brands fa-youtube text-white text-6xl play-icon transition duration-300 drop-shadow-lg"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4">
+                            <p class="text-white font-bold text-lg">हमारे नए ट्यूटोरियल और वीडियो देखें</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Instagram Highlight -->
+                <div data-aos="fade-left">
+                    <h4 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fa-brands fa-instagram text-pink-600 text-2xl"></i> Instagram रील्स</h4>
+                    <a href="https://www.instagram.com/sarwarcomputercenter/" target="_blank" class="block relative rounded-2xl overflow-hidden shadow-xl video-card cursor-pointer group">
+                        <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Instagram Thumbnail" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 video-overlay flex items-center justify-center">
+                            <i class="fa-solid fa-play text-white text-5xl play-icon transition duration-300 drop-shadow-lg border-4 border-white rounded-full w-20 h-20 flex items-center justify-center pl-2"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4">
+                            <p class="text-white font-bold text-lg">लेटेस्ट अपडेट्स और छात्र गतिविधि</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10" data-aos="zoom-in">
+                <a href="https://www.instagram.com/sarwarcomputercenter/" target="_blank" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition">
+                    <i class="fa-brands fa-instagram"></i> Follow Us On Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Admission / Contact Section -->
     <section id="admission" class="py-20 bg-brand-blue text-white relative overflow-hidden">
-        <!-- SVG Wave background -->
         <div class="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-12 fill-gray-50">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-12 fill-white">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
             </svg>
         </div>
@@ -275,7 +340,8 @@
             
             <div data-aos="fade-left" class="h-full flex flex-col justify-center">
                 <div class="bg-white/5 p-4 rounded-3xl backdrop-blur-sm border border-white/10 h-full min-h-[400px]">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14305.10912180017!2d75.0154186!3d26.0650966!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396eb500587cc119%3A0x284e441b924dff95!2sSarwar%20computer%20center!5e0!3m2!1sen!2sin!4v1718360000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0; border-radius: 20px; min-height: 450px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- Corrected Exact Coordinate Map Embed -->
+                    <iframe src="https://maps.google.com/maps?q=26.0650966,75.0154186&t=&z=17&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0; border-radius: 20px; min-height: 450px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -291,7 +357,7 @@
                 <p class="mb-6"><i class="fa-solid fa-envelope text-brand-orange w-6"></i> <a href="mailto:sarwarcomputercenter@gmail.com" class="hover:text-white transition">sarwarcomputercenter@gmail.com</a></p>
                 
                 <div class="flex gap-4 mt-4">
-                    <a href="#" target="_blank" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-xl hover:bg-red-600 text-white transition shadow-lg"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.youtube.com/@sarwarcomputer" target="_blank" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-xl hover:bg-red-600 text-white transition shadow-lg"><i class="fa-brands fa-youtube"></i></a>
                     <a href="https://www.instagram.com/sarwarcomputercenter/" target="_blank" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-xl hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600 text-white transition shadow-lg"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#" target="_blank" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-xl hover:bg-blue-600 text-white transition shadow-lg"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="https://maps.app.goo.gl/mLVwv9MErb9715jDA" target="_blank" class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-xl hover:bg-green-600 text-white transition shadow-lg"><i class="fa-solid fa-map-location-dot"></i></a>
@@ -303,6 +369,7 @@
                 <ul class="space-y-3">
                     <li><a href="#about" class="hover:text-brand-orange transition"><i class="fa-solid fa-angle-right text-xs mr-2"></i>हमारे बारे में</a></li>
                     <li><a href="#courses" class="hover:text-brand-orange transition"><i class="fa-solid fa-angle-right text-xs mr-2"></i>कोर्सेस</a></li>
+                    <li><a href="#gallery" class="hover:text-brand-orange transition"><i class="fa-solid fa-angle-right text-xs mr-2"></i>गैलरी (Videos)</a></li>
                     <li><a href="#contact" class="hover:text-brand-orange transition"><i class="fa-solid fa-angle-right text-xs mr-2"></i>संपर्क करें</a></li>
                 </ul>
             </div>
@@ -317,11 +384,19 @@
             </div>
         </div>
         <div class="text-center text-sm border-t border-gray-800 pt-8 mt-4">
-            <p>&copy; 2026 Sarwar Computer Center. All Rights Reserved. | Designed with ❤️</p>
+            <p>&copy; 2026 Sarwar Computer Center. All Rights Reserved. | Designed with Rudra Digital Marketing's +919799705368❤️</p>
         </div>
     </footer>
 
-    <!-- Bottom Right Floating WhatsApp -->
+    <!-- Floating Sticky Action Buttons -->
+    
+    <!-- Left: Call Now -->
+    <a href="tel:9251000209" class="float-call" title="Call Now">
+        <i class="fa-solid fa-phone-volume"></i>
+        <span>Call Now : +91 9251000209</span>
+    </a>
+
+    <!-- Right: WhatsApp -->
     <a href="https://wa.me/919251000209?text=Hello%20Sarwar%20Computer%20Center,%20I%20want%20to%20know%20more%20about%20your%20courses." class="float-wa" target="_blank" title="Chat on WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
