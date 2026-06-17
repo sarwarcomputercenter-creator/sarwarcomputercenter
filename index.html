@@ -53,6 +53,8 @@
         .social-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); } 
         .social-fb { background-color: #1877F2; } 
         .social-map { background-color: #34A853; } 
+        .social-mail { background-color: #EA4335; }
+        .social-wa { background-color: #25D366; }
 
         /* Floating WhatsApp & Call Button */
         .float-wa { position: fixed; width: 60px; height: 60px; bottom: 30px; right: 30px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 32px; box-shadow: 0px 4px 10px rgba(0,0,0,0.3); z-index: 100; transition: transform 0.3s; }
@@ -96,17 +98,17 @@
     <header class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-50 top-0 border-b border-gray-100">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
-                <img src="logo%20sarwar%20computer%20center.jpeg?v=6" alt="SCC Logo" class="w-12 h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-brand-orange object-cover bg-white">
+                <img src="logo%20sarwar%20computer%20center.jpeg?v=7" alt="SCC Logo" class="w-12 h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-brand-orange object-cover bg-white">
                 <h1 class="text-xl md:text-2xl font-bold text-brand-blue leading-tight tracking-tight">सरवाड़ कम्प्यूटर<br><span class="text-brand-orange text-xs md:text-sm">सेन्टर</span></h1>
             </div>
             
             <nav class="hidden lg:flex gap-8 font-semibold text-gray-600">
                 <a href="#home" class="hover:text-brand-orange transition">Home</a>
-                <a href="#about" class="hover:text-brand-orange transition">About</a>
                 <a href="#courses" class="hover:text-brand-orange transition">Courses</a>
-                <a href="#gallery" class="hover:text-brand-orange transition">Gallery</a>
+                <a href="#admission" class="hover:text-brand-orange transition">Admission</a>
                 <a href="#ebooks" class="hover:text-brand-orange transition">E-Books</a>
-                <a href="#contact" class="hover:text-brand-orange transition">Contact</a>
+                <a href="#location" class="hover:text-brand-orange transition">Location</a>
+                <a href="#social" class="hover:text-brand-orange transition">Contact</a>
             </nav>
 
             <div class="flex items-center gap-3 mobile-header-actions">
@@ -116,7 +118,7 @@
         </div>
     </header>
 
-    <section id="home" class="pt-32 pb-16 md:pt-40 md:pb-20 text-white relative overflow-hidden bg-cover bg-center" style="background-image: url('studentstudy.jpeg?v=6');">
+    <section id="home" class="pt-32 pb-16 md:pt-40 md:pb-20 text-white relative overflow-hidden bg-cover bg-center" style="background-image: url('studentstudy.jpeg?v=7');">
         
         <div class="absolute inset-0 bg-brand-blue/95 md:bg-brand-blue/85 bg-gradient-to-r from-brand-blue via-brand-blue/90 to-brand-blue/60 z-0"></div>
 
@@ -153,19 +155,12 @@
                     <a href="#admission" class="bg-brand-orange text-white px-8 py-3.5 rounded-full font-bold text-lg hover:bg-orange-600 transition shadow-lg shadow-orange-500/40 flex items-center justify-center gap-2 whitespace-nowrap">
                         आज ही एडमिशन लेवें <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    
-                    <div class="flex gap-3 justify-center items-center bg-white/10 p-2 rounded-full backdrop-blur-md border border-white/20">
-                        <a href="https://www.youtube.com/@sarwarcomputer" target="_blank" class="w-10 h-10 rounded-full bg-[#FF0000] flex items-center justify-center text-xl text-white hover:scale-110 transition shadow-lg"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="https://www.instagram.com/sarwarcomputercenter/" target="_blank" class="w-10 h-10 rounded-full social-ig flex items-center justify-center text-xl text-white hover:scale-110 transition shadow-lg"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" target="_blank" class="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center text-xl text-white hover:scale-110 transition shadow-lg"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://maps.google.com/maps?q=26.0650966,75.0154186&t=&z=17&ie=UTF8&iwloc=&output=embed" target="_blank" class="w-10 h-10 rounded-full bg-[#34A853] flex items-center justify-center text-xl text-white hover:scale-110 transition shadow-lg"><i class="fa-solid fa-map-location-dot"></i></a>
-                    </div>
                 </div>
             </div>
             
             <div data-aos="fade-left" data-aos-duration="1200" class="relative hidden lg:block">
                 <div class="absolute inset-0 bg-gradient-to-tr from-brand-orange to-blue-500 rounded-3xl transform rotate-3 scale-105 opacity-50 blur-lg"></div>
-                <img src="studentstudy.jpeg?v=6" alt="Student learning" class="rounded-3xl shadow-2xl relative z-10 border-4 border-white/10 object-cover h-[500px] w-full floating-element" style="animation-duration: 8s;">
+                <img src="studentstudy.jpeg?v=7" alt="Student learning" class="rounded-3xl shadow-2xl relative z-10 border-4 border-white/10 object-cover h-[500px] w-full floating-element" style="animation-duration: 8s;">
             </div>
         </div>
     </section>
@@ -178,22 +173,22 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 justify-items-center max-w-5xl mx-auto">
                 <div class="w-36 h-36 md:w-48 md:h-48 bg-blue-50 rounded-full shadow-lg border-4 border-blue-400 flex flex-col items-center justify-center transform transition hover:scale-105 hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="100">
                     <i class="fa-solid fa-chalkboard-user text-4xl md:text-5xl text-blue-600 mb-2 md:mb-3"></i>
-                    <h4 class="font-bold text-gray-800 text-sm md:text-lg">एक्सपर्ट फैकल्टी</h4>
+                    <h4 class="font-bold text-gray-800 text-sm md:text-lg mt-2">एक्सपर्ट फैकल्टी</h4>
                 </div>
                 
                 <div class="w-36 h-36 md:w-48 md:h-48 bg-orange-50 rounded-full shadow-lg border-4 border-orange-400 flex flex-col items-center justify-center transform transition hover:scale-105 hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="200">
                     <i class="fa-solid fa-laptop-code text-4xl md:text-5xl text-brand-orange mb-2 md:mb-3"></i>
-                    <h4 class="font-bold text-gray-800 text-sm md:text-lg">100% प्रैक्टिकल</h4>
+                    <h4 class="font-bold text-gray-800 text-sm md:text-lg mt-2">100% प्रैक्टिकल</h4>
                 </div>
                 
                 <div class="w-36 h-36 md:w-48 md:h-48 bg-green-50 rounded-full shadow-lg border-4 border-green-400 flex flex-col items-center justify-center transform transition hover:scale-105 hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="300">
                     <i class="fa-solid fa-user-tie text-4xl md:text-5xl text-green-600 mb-2 md:mb-3"></i>
-                    <h4 class="font-bold text-gray-800 text-sm md:text-lg">जॉब गाइडेंस</h4>
+                    <h4 class="font-bold text-gray-800 text-sm md:text-lg mt-2">जॉब गाइडेंस</h4>
                 </div>
 
                 <div class="w-36 h-36 md:w-48 md:h-48 bg-purple-50 rounded-full shadow-lg border-4 border-purple-400 flex flex-col items-center justify-center transform transition hover:scale-105 hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="400">
                     <i class="fa-solid fa-headset text-4xl md:text-5xl text-purple-600 mb-2 md:mb-3"></i>
-                    <h4 class="font-bold text-gray-800 text-sm md:text-lg">24X7 Support</h4>
+                    <h4 class="font-bold text-gray-800 text-sm md:text-lg mt-2">24X7 Support</h4>
                 </div>
             </div>
         </div>
@@ -312,7 +307,7 @@
                             </div>
                             <div onclick="inquireCourse('Graphic & Web Designing')" class="course-card bg-white p-4 rounded-xl border-l-4 border-l-purple-500 shadow-sm cursor-pointer">
                                 <h5 class="text-base font-bold text-gray-800 mb-1">Graphic & Web Design</h5>
-                                <p class="text-xs text-gray-500 mb-2">क्रिएटिव डिज़ाइन और वेब डेवलपमेंट सीखें।</p>
+                                <p class="text-xs text-gray-500 mb-2">क्रिएटिव डिज़ाइन और वेब डेवलपमेंट सीखें।</p>
                                 <span class="text-purple-600 text-xs font-bold flex items-center gap-1"><i class="fa-brands fa-whatsapp text-green-500"></i> जानकारी लें</span>
                             </div>
                             <div onclick="inquireCourse('RS-CEE')" class="course-card bg-white p-4 rounded-xl border-l-4 border-l-purple-500 shadow-sm cursor-pointer sm:col-span-2">
@@ -324,8 +319,88 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="mt-12 bg-gradient-to-r from-red-50 to-red-100 border border-red-200 rounded-3xl p-6 md:p-8 shadow-[0_10px_25px_rgba(239,68,68,0.15)] flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden" data-aos="fade-up">
+    <section id="admission" class="py-16 md:py-20 bg-brand-blue text-white relative overflow-hidden border-t-4 border-brand-orange">
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-8 md:h-12 fill-white">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-4 mt-8 md:mt-10 max-w-4xl">
+            <div class="text-center mb-10" data-aos="fade-up">
+                <h3 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">नए बैच के लिए <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-300">एडमिशन शुरू हो चुके हैं!</span></h3>
+                <p class="text-sm md:text-lg text-gray-300">सीट्स लिमिटेड हैं! नीचे दिया गया फॉर्म भरें और हमारी टीम आपसे तुरंत संपर्क करेगी।</p>
+            </div>
+            
+            <div class="bg-white text-gray-800 p-6 md:p-10 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative" data-aos="zoom-in">
+                <div class="absolute -top-5 -right-5 bg-brand-orange text-white w-14 h-14 md:w-20 md:h-20 rounded-full flex items-center justify-center text-2xl md:text-3xl font-bold shadow-lg transform rotate-12"><i class="fa-solid fa-paper-plane"></i></div>
+                <h4 class="text-2xl md:text-3xl font-bold mb-6 text-brand-blue border-b pb-4 text-center">एडमिशन फॉर्म</h4>
+                
+                <form id="admissionForm" onsubmit="submitForm(event)">
+                    <div class="grid md:grid-cols-2 gap-4 md:gap-6">
+                        <div class="mb-2">
+                            <label class="block text-sm font-bold mb-2 text-gray-600">पूरा नाम</label>
+                            <input type="text" id="name" name="Name" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-orange transition text-base">
+                        </div>
+                        <div class="mb-2">
+                            <label class="block text-sm font-bold mb-2 text-gray-600">मोबाइल नंबर</label>
+                            <input type="tel" id="mobile" name="Mobile" required pattern="[0-9]{10}" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-orange transition text-base" placeholder="10 Digit Number">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4 mt-2">
+                        <label class="block text-sm font-bold mb-2 text-gray-600">पता</label>
+                        <input type="text" id="address" name="Address" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-orange transition text-base">
+                    </div>
+                    
+                    <div class="mb-8">
+                        <label class="block text-sm font-bold mb-2 text-gray-600">कोर्स चुनें / विषय</label>
+                        <select id="course" name="Course" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-orange transition text-base">
+                            <option value="">-- कृपया चुनें --</option>
+                            <optgroup label="👩‍🎓 सरकारी निःशुल्क योजना">
+                                <option value="Women Free Computer Course">राजस्थान सरकार - महिलाओं के लिए 100% Free Course</option>
+                            </optgroup>
+                            <optgroup label="🔥 मेगा ऑफर कोर्सेस">
+                                <option value="RS-CIT (Mega Offer)">RS-CIT + 2 Free Courses</option>
+                                <option value="Tally Prime (Mega Offer)">Tally Prime + 2 Free Courses</option>
+                            </optgroup>
+                            <optgroup label="💻 Core IT & Digital Literacy">
+                                <option value="RS-CIT">1. RS-CIT</option>
+                                <option value="RS-CIT-AI">2. RS-CIT-AI</option>
+                                <option value="RCDTP">3. RCDTP (Desktop Publishing)</option>
+                                <option value="RC-MOS">4. RC-MOS (MS Office Specialist)</option>
+                            </optgroup>
+                            <optgroup label="💰 Finance & Accounting">
+                                <option value="Tally Prime">5. Tally Prime (Essential & Pro)</option>
+                                <option value="RS-CFA">6. RS-CFA (Financial Accounting)</option>
+                            </optgroup>
+                            <optgroup label="🎨 Vocational & Advanced Skills">
+                                <option value="Advance Excel / AI">7. Advance Excel / AI</option>
+                                <option value="AI Prompt Engineering">8. AI Prompt Engineering</option>
+                                <option value="Graphic & Web Designing">9. Graphic & Web Designing</option>
+                                <option value="Digital Marketing">10. Digital Marketing</option>
+                                <option value="RS-CEE">11. RS-CEE (Spoken English & PD)</option>
+                            </optgroup>
+                            <optgroup label="🤝 अन्य जानकारी">
+                                <option value="Counseling Needed">काउंसलिंग / Other Help चाहिए</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <button type="submit" id="submitBtn" class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white font-bold py-4 rounded-xl hover:from-green-600 hover:to-green-700 transition shadow-lg flex justify-center items-center gap-2 text-lg transform hover:-translate-y-1">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> Submit Form & Connect
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="rscit-help" class="py-12 bg-white border-b border-gray-200">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="bg-gradient-to-r from-red-50 to-red-100 border border-red-200 rounded-3xl p-6 md:p-10 shadow-[0_10px_25px_rgba(239,68,68,0.15)] flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden" data-aos="fade-up">
                 <i class="fa-solid fa-triangle-exclamation text-red-500/10 text-9xl absolute -right-4 -bottom-8"></i>
                 
                 <div class="flex flex-col md:flex-row items-center md:items-start gap-4 text-center md:text-left relative z-10">
@@ -337,59 +412,14 @@
                         <p class="text-sm md:text-base text-gray-700 font-medium">डुप्लीकेट मार्कशीट निकलवाने या किसी भी प्रकार के करेक्शन (Correction) की तुरंत जानकारी के लिए आज ही संपर्क करें।</p>
                     </div>
                 </div>
-                <a href="https://wa.me/919251000209?text=नमस्ते!%20मुझे%20RS-CIT%20मार्कशीट%20(खो%20गई%20/%20करेक्शन)%20के%20बारे%20में%20जानकारी%20चाहिए।" target="_blank" class="bg-red-600 text-white px-8 py-3.5 rounded-full font-bold shadow-lg hover:bg-red-700 transition flex items-center gap-2 whitespace-nowrap hover:-translate-y-1 transform relative z-10 text-lg">
+                <a href="https://wa.me/919530093119?text=नमस्ते!%20मुझे%20RS-CIT%20मार्कशीट%20(खो%20गई%20/%20करेक्शन)%20के%20बारे%20में%20जानकारी%20चाहिए।" target="_blank" class="bg-red-600 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:bg-red-700 transition flex items-center gap-2 whitespace-nowrap hover:-translate-y-1 transform relative z-10 text-lg">
                     <i class="fa-brands fa-whatsapp text-2xl"></i> मदद प्राप्त करें
                 </a>
             </div>
-            
         </div>
     </section>
 
-    <section id="gallery" class="py-16 md:py-20 bg-white">
-        <div class="container mx-auto px-4 max-w-6xl">
-            <div class="text-center mb-10 md:mb-12" data-aos="fade-up">
-                <h3 class="text-2xl md:text-4xl font-bold text-brand-blue mb-4">हमारी गैलरी (Videos)</h3>
-                <p class="text-gray-600 text-sm md:text-lg">हमारे सेन्टर की झलकियां, कोर्सेस और छात्रों के अनुभव देखें।</p>
-                <div class="w-24 h-1.5 bg-brand-orange mx-auto mt-4 md:mt-6 rounded-full"></div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
-                <div data-aos="fade-up">
-                    <h4 class="text-lg md:text-xl font-bold mb-4 flex items-center gap-2"><i class="fa-brands fa-youtube text-red-600 text-2xl"></i> YouTube चैनल</h4>
-                    <a href="https://www.youtube.com/@sarwarcomputer" target="_blank" class="block relative rounded-2xl overflow-hidden shadow-xl video-card cursor-pointer group">
-                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="YouTube Thumbnail" class="w-full h-48 md:h-64 object-cover transform group-hover:scale-110 transition duration-500">
-                        <div class="absolute inset-0 video-overlay flex items-center justify-center">
-                            <i class="fa-brands fa-youtube text-white text-5xl md:text-6xl play-icon transition duration-300 drop-shadow-lg"></i>
-                        </div>
-                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4">
-                            <p class="text-white font-bold text-base md:text-lg">हमारे नए ट्यूटोरियल और वीडियो देखें</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div data-aos="fade-up" data-aos-delay="100">
-                    <h4 class="text-lg md:text-xl font-bold mb-4 flex items-center gap-2"><i class="fa-brands fa-instagram text-pink-600 text-2xl"></i> Instagram रील्स</h4>
-                    <a href="https://www.instagram.com/sarwarcomputercenter/" target="_blank" class="block relative rounded-2xl overflow-hidden shadow-xl video-card cursor-pointer group">
-                        <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Instagram Thumbnail" class="w-full h-48 md:h-64 object-cover transform group-hover:scale-110 transition duration-500">
-                        <div class="absolute inset-0 video-overlay flex items-center justify-center">
-                            <i class="fa-solid fa-play text-white text-4xl md:text-5xl play-icon transition duration-300 drop-shadow-lg border-4 border-white rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center pl-2"></i>
-                        </div>
-                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4">
-                            <p class="text-white font-bold text-base md:text-lg">लेटेस्ट अपडेट्स और छात्र गतिविधि</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="text-center mt-10" data-aos="zoom-in">
-                <a href="https://www.instagram.com/sarwarcomputercenter/" target="_blank" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 md:px-8 py-3 rounded-full font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition text-sm md:text-base">
-                    <i class="fa-brands fa-instagram"></i> Follow Us On Instagram
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="ebooks" class="py-16 md:py-20 bg-gray-900 text-white border-t-4 border-yellow-500 relative overflow-hidden">
+    <section id="ebooks" class="py-16 md:py-20 bg-gray-900 text-white relative overflow-hidden">
         <div class="absolute top-0 right-0 w-64 h-64 bg-yellow-500/10 rounded-full blur-[80px]"></div>
         <div class="absolute bottom-0 left-0 w-64 h-64 bg-brand-orange/10 rounded-full blur-[80px]"></div>
 
@@ -400,7 +430,7 @@
                         📚 स्पेशल ऑफर - स्टूडेंट्स के लिए
                     </div>
                     <h3 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight text-white">
-                        क्या आपको <span class="text-yellow-400">किताबें पढ़ने</span> का शौक है?
+                        क्या आपको <span class="text-yellow-400">किताबें पढ़ने</span> का शौक है?
                     </h3>
                     <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
                         <strong class="text-yellow-400">200+ बेस्ट सेलर ई-बुक्स (E-Books)</strong> का महा-बंडल – मोटिवेशन, माइंड सेट, सफलता और बिज़नेस ग्रोथ। अपनी सोच और जीवन को बदलने वाली दुनिया की सबसे बेहतरीन किताबें अब एक साथ!
@@ -421,9 +451,7 @@
                 <div data-aos="fade-left" class="flex justify-center lg:justify-end">
                     <a href="https://pages.razorpay.com/rudradigitalebooks" target="_blank" class="block relative group w-full max-w-xs md:max-w-md">
                         <div class="absolute inset-0 bg-yellow-500 rounded-3xl blur-xl opacity-30 group-hover:opacity-60 transition duration-500"></div>
-                        
-                        <img src="bestbooks.jpeg?v=6" alt="200+ Best Seller E-Books Bundle" class="relative z-10 w-full rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-2 border-yellow-500/30 transform group-hover:-translate-y-2 transition duration-500 object-cover">
-                        
+                        <img src="bestbooks.jpeg?v=7" alt="200+ Best Seller E-Books Bundle" class="relative z-10 w-full rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-2 border-yellow-500/30 transform group-hover:-translate-y-2 transition duration-500 object-cover">
                         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
                             <div class="bg-black/80 text-yellow-400 font-bold px-6 py-3 rounded-full flex items-center gap-2 backdrop-blur-md border border-yellow-500/50 text-lg shadow-2xl">
                                 <i class="fa-solid fa-link"></i> Click to Buy
@@ -435,85 +463,84 @@
         </div>
     </section>
 
-    <section id="admission" class="py-16 md:py-20 bg-brand-blue text-white relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-8 md:h-12 fill-white">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
-            </svg>
-        </div>
-
-        <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-10 md:gap-12 items-center mt-8 md:mt-10">
-            <div data-aos="fade-right">
-                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 leading-tight">नए बैच के लिए <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-300">एडमिशन शुरू हो चुके हैं!</span></h3>
-                <p class="text-sm md:text-lg mb-8 text-gray-300">सीट्स लिमिटेड हैं! नीचे दिया गया फॉर्म भरें और हमारी टीम आपसे तुरंत संपर्क करेगी।</p>
-                
-                <div class="bg-white text-gray-800 p-6 md:p-8 rounded-3xl shadow-2xl relative">
-                    <div class="absolute -top-4 -right-4 md:-top-5 md:-right-5 bg-brand-orange text-white w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center text-xl md:text-2xl font-bold shadow-lg transform rotate-12"><i class="fa-solid fa-paper-plane"></i></div>
-                    <h4 class="text-xl md:text-2xl font-bold mb-6 text-brand-blue border-b pb-3 md:pb-4">एडमिशन फॉर्म</h4>
-                    <form id="admissionForm" onsubmit="submitForm(event)">
-                        <div class="mb-4 md:mb-5">
-                            <label class="block text-xs md:text-sm font-bold mb-2 text-gray-600">पूरा नाम</label>
-                            <input type="text" id="name" required class="w-full px-4 py-2.5 md:py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-orange transition text-sm md:text-base">
-                        </div>
-                        <div class="mb-4 md:mb-5">
-                            <label class="block text-xs md:text-sm font-bold mb-2 text-gray-600">पता</label>
-                            <input type="text" id="address" required class="w-full px-4 py-2.5 md:py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-orange transition text-sm md:text-base">
-                        </div>
-                        <div class="mb-4 md:mb-5">
-                            <label class="block text-xs md:text-sm font-bold mb-2 text-gray-600">मोबाइल नंबर</label>
-                            <input type="tel" id="mobile" required pattern="[0-9]{10}" class="w-full px-4 py-2.5 md:py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-orange transition text-sm md:text-base" placeholder="10 Digit Number">
-                        </div>
-                        
-                        <div class="mb-6">
-                            <label class="block text-xs md:text-sm font-bold mb-2 text-gray-600">कोर्स चुनें / विषय</label>
-                            <select id="course" required class="w-full px-3 md:px-4 py-2.5 md:py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-orange transition text-sm md:text-base">
-                                <option value="">-- कृपया चुनें --</option>
-                                
-                                <optgroup label="👩‍🎓 सरकारी निःशुल्क योजना">
-                                    <option value="Women Free Computer Course">राजस्थान सरकार - महिलाओं के लिए 100% Free Course</option>
-                                </optgroup>
-
-                                <optgroup label="🔥 मेगा ऑफर कोर्सेस">
-                                    <option value="RS-CIT (Mega Offer)">RS-CIT + 2 Free Courses</option>
-                                    <option value="Tally Prime (Mega Offer)">Tally Prime + 2 Free Courses</option>
-                                </optgroup>
-                                
-                                <optgroup label="💻 Core IT & Digital Literacy">
-                                    <option value="RS-CIT">1. RS-CIT</option>
-                                    <option value="RS-CIT-AI">2. RS-CIT-AI</option>
-                                    <option value="RCDTP">3. RCDTP (Desktop Publishing)</option>
-                                    <option value="RC-MOS">4. RC-MOS (MS Office Specialist)</option>
-                                </optgroup>
-                                
-                                <optgroup label="💰 Finance & Accounting">
-                                    <option value="Tally Prime">5. Tally Prime (Essential & Pro)</option>
-                                    <option value="RS-CFA">6. RS-CFA (Financial Accounting)</option>
-                                </optgroup>
-                                
-                                <optgroup label="🎨 Vocational & Advanced Skills">
-                                    <option value="Advance Excel / AI">7. Advance Excel / AI</option>
-                                    <option value="AI Prompt Engineering">8. AI Prompt Engineering</option>
-                                    <option value="Graphic & Web Designing">9. Graphic & Web Designing</option>
-                                    <option value="Digital Marketing">10. Digital Marketing</option>
-                                    <option value="RS-CEE">11. RS-CEE (Spoken English & PD)</option>
-                                </optgroup>
-                                
-                                <optgroup label="🤝 अन्य जानकारी">
-                                    <option value="Counseling Needed">काउंसलिंग / Other Help चाहिए</option>
-                                </optgroup>
-                            </select>
-                        </div>
-
-                        <button type="submit" class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white font-bold py-3 md:py-4 rounded-xl hover:from-green-600 hover:to-green-700 transition shadow-lg flex justify-center items-center gap-2 text-base md:text-lg transform hover:-translate-y-1">
-                            <i class="fa-brands fa-whatsapp text-xl md:text-2xl"></i> Submit Form
-                        </button>
-                    </form>
-                </div>
-            </div>
+    <section id="location" class="py-16 bg-white border-t border-gray-200">
+        <div class="container mx-auto px-4 max-w-6xl text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4" data-aos="fade-up">हमारा पता (Location)</h3>
+            <p class="text-gray-600 text-sm md:text-lg mb-8" data-aos="fade-up" data-aos-delay="100">सीनियर सेकेंडरी स्कूल रोड, पथवारी के सामने, सरवाड़</p>
             
-            <div data-aos="fade-left" class="h-full flex flex-col justify-center mt-8 lg:mt-0">
-                <div class="bg-white/5 p-2 md:p-4 rounded-3xl backdrop-blur-sm border border-white/10 h-full min-h-[300px] md:min-h-[400px]">
-                    <iframe src="https://maps.google.com/maps?q=26.0650966,75.0154186&t=&z=17&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0; border-radius: 15px; min-height: 300px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="w-full h-[350px] md:h-[450px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white relative z-10" data-aos="zoom-in" data-aos-delay="200">
+                <iframe src="https://maps.google.com/maps?q=26.0650966,75.0154186&t=&z=17&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="social" class="py-16 md:py-20 bg-gray-50 border-t border-gray-200">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h3 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4">हमसे जुड़ें (Connect With Us)</h3>
+                <p class="text-gray-600 text-sm md:text-lg">नीचे दिए गए किसी भी प्लेटफ़ॉर्म पर क्लिक करके सीधे हमसे संपर्क करें।</p>
+                <div class="w-24 h-1.5 bg-brand-orange mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-16" data-aos="fade-up" data-aos-delay="100">
+                
+                <a href="https://wa.me/919251000209" target="_blank" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transform hover:-translate-y-2 transition flex flex-col items-center gap-3 border-b-4 border-[#25D366]">
+                    <div class="w-16 h-16 rounded-full bg-[#25D366]/10 flex items-center justify-center text-4xl text-[#25D366]"><i class="fa-brands fa-whatsapp"></i></div>
+                    <span class="font-bold text-gray-800">WhatsApp</span>
+                </a>
+                
+                <a href="https://www.youtube.com/@sarwarcomputer" target="_blank" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transform hover:-translate-y-2 transition flex flex-col items-center gap-3 border-b-4 border-[#FF0000]">
+                    <div class="w-16 h-16 rounded-full bg-[#FF0000]/10 flex items-center justify-center text-4xl text-[#FF0000]"><i class="fa-brands fa-youtube"></i></div>
+                    <span class="font-bold text-gray-800">YouTube</span>
+                </a>
+
+                <a href="https://www.instagram.com/sarwarcomputercenter/" target="_blank" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transform hover:-translate-y-2 transition flex flex-col items-center gap-3 border-b-4 border-pink-500">
+                    <div class="w-16 h-16 rounded-full bg-pink-50 flex items-center justify-center text-4xl text-pink-600"><i class="fa-brands fa-instagram"></i></div>
+                    <span class="font-bold text-gray-800">Instagram</span>
+                </a>
+
+                <a href="#" target="_blank" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transform hover:-translate-y-2 transition flex flex-col items-center gap-3 border-b-4 border-[#1877F2]">
+                    <div class="w-16 h-16 rounded-full bg-[#1877F2]/10 flex items-center justify-center text-4xl text-[#1877F2]"><i class="fa-brands fa-facebook-f"></i></div>
+                    <span class="font-bold text-gray-800">Facebook</span>
+                </a>
+
+                <a href="mailto:sarwarcomputercenter@gmail.com" target="_blank" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transform hover:-translate-y-2 transition flex flex-col items-center gap-3 border-b-4 border-[#EA4335]">
+                    <div class="w-16 h-16 rounded-full bg-[#EA4335]/10 flex items-center justify-center text-4xl text-[#EA4335]"><i class="fa-solid fa-envelope"></i></div>
+                    <span class="font-bold text-gray-800">E-Mail</span>
+                </a>
+
+                <a href="https://maps.google.com/maps?q=26.0650966,75.0154186&t=&z=17&ie=UTF8&iwloc=&output=embed" target="_blank" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transform hover:-translate-y-2 transition flex flex-col items-center gap-3 border-b-4 border-[#34A853]">
+                    <div class="w-16 h-16 rounded-full bg-[#34A853]/10 flex items-center justify-center text-4xl text-[#34A853]"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <span class="font-bold text-gray-800">Google Map</span>
+                </a>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                <div data-aos="fade-up">
+                    <h4 class="text-lg md:text-xl font-bold mb-4 flex items-center gap-2"><i class="fa-brands fa-youtube text-[#FF0000] text-2xl"></i> Latest YouTube Video</h4>
+                    <a href="https://www.youtube.com/@sarwarcomputer" target="_blank" class="block relative rounded-2xl overflow-hidden shadow-xl video-card cursor-pointer group">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="YouTube Thumbnail" class="w-full h-48 md:h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 video-overlay flex items-center justify-center">
+                            <i class="fa-brands fa-youtube text-white text-5xl md:text-6xl play-icon transition duration-300 drop-shadow-lg"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4">
+                            <p class="text-white font-bold text-base md:text-lg">हमारे नए ट्यूटोरियल और वीडियो देखें</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="text-lg md:text-xl font-bold mb-4 flex items-center gap-2"><i class="fa-brands fa-instagram text-pink-600 text-2xl"></i> Latest Instagram Reels</h4>
+                    <a href="https://www.instagram.com/sarwarcomputercenter/" target="_blank" class="block relative rounded-2xl overflow-hidden shadow-xl video-card cursor-pointer group">
+                        <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Instagram Thumbnail" class="w-full h-48 md:h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 video-overlay flex items-center justify-center">
+                            <i class="fa-solid fa-play text-white text-4xl md:text-5xl play-icon transition duration-300 drop-shadow-lg border-4 border-white rounded-full w-16 h-16 md:w-20 md:h-20 flex items-center justify-center pl-2"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4">
+                            <p class="text-white font-bold text-base md:text-lg">लेटेस्ट अपडेट्स और छात्र गतिविधि</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -528,19 +555,18 @@
                 <p class="mb-6 text-sm md:text-base"><i class="fa-solid fa-envelope text-brand-orange w-6"></i> <a href="mailto:sarwarcomputercenter@gmail.com" class="hover:text-white transition">sarwarcomputercenter@gmail.com</a></p>
                 
                 <div class="flex gap-4 mt-4 justify-center md:justify-start">
-                    <a href="https://www.youtube.com/@sarwarcomputer" target="_blank" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#FF0000] flex items-center justify-center text-lg md:text-xl text-white transition shadow-lg hover:scale-110"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://www.instagram.com/sarwarcomputercenter/" target="_blank" class="w-10 h-10 md:w-12 md:h-12 rounded-full social-ig flex items-center justify-center text-lg md:text-xl text-white transition shadow-lg hover:scale-110"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" target="_blank" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#1877F2] flex items-center justify-center text-lg md:text-xl text-white transition shadow-lg hover:scale-110"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://maps.google.com/maps?q=26.0650966,75.0154186&t=&z=17&ie=UTF8&iwloc=&output=embed" target="_blank" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#34A853] flex items-center justify-center text-lg md:text-xl text-white transition shadow-lg hover:scale-110"><i class="fa-solid fa-map-location-dot"></i></a>
+                    <a href="https://www.youtube.com/@sarwarcomputer" target="_blank" class="w-10 h-10 rounded-full bg-[#FF0000] flex items-center justify-center text-lg text-white transition shadow-lg hover:scale-110"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/sarwarcomputercenter/" target="_blank" class="w-10 h-10 rounded-full social-ig flex items-center justify-center text-lg text-white transition shadow-lg hover:scale-110"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank" class="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center text-lg text-white transition shadow-lg hover:scale-110"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
             </div>
             
             <div class="text-center md:text-left">
                 <h4 class="text-lg md:text-xl font-bold text-white mb-4 md:mb-6">Quick Links</h4>
                 <ul class="space-y-2 md:space-y-3 text-sm md:text-base">
-                    <li><a href="#about" class="hover:text-brand-orange transition"><i class="fa-solid fa-angle-right text-xs mr-2"></i>हमारे बारे में</a></li>
-                    <li><a href="#courses" class="hover:text-brand-orange transition"><i class="fa-solid fa-angle-right text-xs mr-2"></i>कोर्सेस</a></li>
-                    <li><a href="#gallery" class="hover:text-brand-orange transition"><i class="fa-solid fa-angle-right text-xs mr-2"></i>गैलरी (Videos)</a></li>
+                    <li><a href="#home" class="hover:text-brand-orange transition"><i class="fa-solid fa-angle-right text-xs mr-2"></i>Home</a></li>
+                    <li><a href="#courses" class="hover:text-brand-orange transition"><i class="fa-solid fa-angle-right text-xs mr-2"></i>Courses</a></li>
+                    <li><a href="#admission" class="hover:text-brand-orange transition"><i class="fa-solid fa-angle-right text-xs mr-2"></i>Admission</a></li>
                     <li><a href="#ebooks" class="hover:text-brand-orange transition"><i class="fa-solid fa-angle-right text-xs mr-2"></i>E-Books</a></li>
                 </ul>
             </div>
@@ -555,7 +581,7 @@
             </div>
         </div>
         <div class="text-center text-xs md:text-sm border-t border-gray-800 pt-6 md:pt-8 mt-4">
-            <p>© 2026 Sarwar Computer Center. All Rights Reserved. | Designed with Rudra Digital Marketing's +919799705368</p>
+            <p>© 2026 Sarwar Computer Center. All Rights Reserved. | Designed by @vikramsjadana</p>
         </div>
     </footer>
 
@@ -585,19 +611,57 @@
             offset: 100
         });
 
-        // WhatsApp Form Logic
+        // ✨ Form Submit: Sends to Email AND WhatsApp automatically
         function submitForm(event) {
-            event.preventDefault();
+            event.preventDefault(); 
+            
+            const btn = document.getElementById('submitBtn');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-xl md:text-2xl"></i> Processing...'; 
+            btn.disabled = true;
+
             const name = document.getElementById('name').value;
             const address = document.getElementById('address').value;
             const mobile = document.getElementById('mobile').value;
             const course = document.getElementById('course').value;
             
-            const whatsappNumber = "919251000209";
-            const message = `*New Admission Inquiry!* %0A%0A👤 *Name:* ${name} %0A📍 *Address:* ${address} %0A📱 *Mobile:* ${mobile} %0A💻 *Course/Query:* ${course} %0A%0A_Sent via Website_`;
-            
-            window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
-            document.getElementById('admissionForm').reset();
+            // 1. Send data to Email silently
+            fetch("https://formsubmit.co/ajax/sarwarcomputercenter@gmail.com", {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    "छात्र का नाम (Name)": name,
+                    "पता (Address)": address,
+                    "मोबाइल नंबर (Mobile)": mobile,
+                    "चुना गया कोर्स (Course)": course,
+                    "_subject": "🔥 New Admission Inquiry - Website"
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // 2. Redirect to WhatsApp with filled data
+                const whatsappNumber = "919251000209";
+                const message = `*New Admission Inquiry!* %0A%0A👤 *Name:* ${name} %0A📍 *Address:* ${address} %0A📱 *Mobile:* ${mobile} %0A💻 *Course/Query:* ${course} %0A%0A_Sent via Website_`;
+                
+                window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+                
+                // 3. Reset form
+                document.getElementById('admissionForm').reset();
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert("फॉर्म सबमिट हो गया है! अब आपको WhatsApp पर भेजा जा रहा है...");
+                const whatsappNumber = "919251000209";
+                const message = `*New Admission Inquiry!* %0A%0A👤 *Name:* ${name} %0A📍 *Address:* ${address} %0A📱 *Mobile:* ${mobile} %0A💻 *Course/Query:* ${course}`;
+                window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+            });
         }
 
         // Card Click Logic
