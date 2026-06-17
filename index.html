@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- ✨ NEW: Anti-Cache Meta Tags (ब्राउज़र को हमेशा नया डिज़ाइन लोड करने का निर्देश) -->
+    <!-- Anti-Cache Meta Tags (ब्राउज़र को हमेशा नया डिज़ाइन लोड करने का निर्देश) -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
@@ -106,8 +106,7 @@
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <!-- Logo Section -->
             <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
-                <!-- ✨ NEW: Cache Busting in Logo -->
-                <img src="logo%20sarwar%20computer%20center.jpeg?v=1" alt="SCC Logo" class="w-12 h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-brand-orange object-cover bg-white">
+                <img src="logo%20sarwar%20computer%20center.jpeg?v=2" alt="SCC Logo" class="w-12 h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-brand-orange object-cover bg-white">
                 <h1 class="text-xl md:text-2xl font-bold text-brand-blue leading-tight tracking-tight">सरवाड़ कम्प्यूटर<br><span class="text-brand-orange text-xs md:text-sm">सेन्टर</span></h1>
             </div>
             
@@ -127,15 +126,11 @@
         </div>
     </header>
 
-    <!-- Animated Hero Section with Background Photo -->
-    <section id="home" class="pt-32 pb-16 md:pt-40 md:pb-20 bg-brand-blue text-white relative overflow-hidden">
+    <!-- ✨ MOBILE FIXED: CSS Background Image Hero Section -->
+    <section id="home" class="pt-32 pb-16 md:pt-40 md:pb-20 text-white relative overflow-hidden bg-cover bg-center" style="background-image: url('studentstudy.jpeg?v=2');">
         
-        <!-- Background Image Overlay -->
-        <div class="absolute inset-0 z-0">
-            <!-- ✨ NEW: Cache Busting in Image (?v=1) -->
-            <img src="studentstudy.jpeg?v=1" alt="Students studying computer" class="w-full h-full object-cover opacity-20">
-            <div class="absolute inset-0 bg-gradient-to-r from-brand-blue via-brand-blue/85 to-brand-blue/50"></div>
-        </div>
+        <!-- Mobile/Desktop Overlay (Darker on mobile for better text visibility) -->
+        <div class="absolute inset-0 bg-brand-blue/90 md:bg-brand-blue/80 bg-gradient-to-r from-brand-blue via-brand-blue/90 to-brand-blue/50 z-0"></div>
 
         <div class="absolute top-[-10%] right-[-5%] w-96 h-96 bg-blue-500 rounded-full mix-blend-screen filter blur-[100px] opacity-40 floating-element z-0"></div>
         <div class="absolute bottom-[-10%] left-[-5%] w-80 h-80 bg-brand-orange rounded-full mix-blend-screen filter blur-[100px] opacity-30 floating-element z-0" style="animation-delay: 2s;"></div>
@@ -175,8 +170,8 @@
             
             <div data-aos="fade-left" data-aos-duration="1200" class="relative hidden lg:block">
                 <div class="absolute inset-0 bg-gradient-to-tr from-brand-orange to-blue-500 rounded-3xl transform rotate-3 scale-105 opacity-50 blur-lg"></div>
-                <!-- ✨ NEW: Cache Busting in Image (?v=1) -->
-                <img src="studentstudy.jpeg?v=1" alt="Student learning" class="rounded-3xl shadow-2xl relative z-10 border-4 border-white/10 object-cover h-[500px] w-full floating-element" style="animation-duration: 8s;">
+                <!-- Decorative Right Side Image -->
+                <img src="studentstudy.jpeg?v=2" alt="Student learning" class="rounded-3xl shadow-2xl relative z-10 border-4 border-white/10 object-cover h-[500px] w-full floating-element" style="animation-duration: 8s;">
             </div>
         </div>
     </section>
@@ -312,7 +307,7 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-10 md:mb-12" data-aos="fade-up">
                 <h3 class="text-2xl md:text-4xl font-bold text-brand-blue mb-4">हमारी गैलरी (Videos)</h3>
-                <p class="text-gray-600 text-sm md:text-lg">हमारे सेन्टर की झलकियां, कोर्सेस और छात्रों के अनुभव देखें।</p>
+                <p class="text-gray-600 text-sm md:text-lg">हमारे सेन्टर की झलकियां, कोर्सेस और छात्रों के अनुभव देखें.</p>
                 <div class="w-24 h-1.5 bg-brand-orange mx-auto mt-4 md:mt-6 rounded-full"></div>
             </div>
 
@@ -490,7 +485,7 @@
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <!-- ✨ FIXED: Google Translate Scripts -->
+    <!-- Fixed Google Translate Scripts -->
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({pageLanguage: 'hi', includedLanguages: 'en,hi'}, 'google_translate_element');
