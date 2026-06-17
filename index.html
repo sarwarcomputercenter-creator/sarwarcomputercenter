@@ -60,12 +60,20 @@
         .float-call i { animation: ring 2s infinite; font-size: 22px; }
         @keyframes ring { 0% { transform: rotate(0); } 10% { transform: rotate(15deg); } 20% { transform: rotate(-15deg); } 30% { transform: rotate(15deg); } 40% { transform: rotate(-15deg); } 50% { transform: rotate(0); } }
 
+        /* Google Translate Fixed CSS */
+        .goog-te-banner-frame.skiptranslate { display: none !important; } 
+        body { top: 0px !important; }
+        #google_translate_element { display: inline-block; }
+        .goog-te-gadget { font-family: 'Poppins', sans-serif !important; font-size: 0px; color: transparent; }
+        .goog-te-gadget .goog-te-combo { margin: 0; padding: 6px 10px; border-radius: 8px; font-size: 14px; border: 1px solid #cbd5e1; outline: none; background-color: #f8fafc; color: #0f172a; font-weight: 600; cursor: pointer; }
+
         /* Mobile Adjustments */
         @media (max-width: 768px) {
             .float-call span { display: none; }
             .float-call { padding: 0; width: 60px; justify-content: center; left: 20px; bottom: 20px;}
             .float-wa { right: 20px; bottom: 20px; }
             .sticky-social { display: none; } 
+            .mobile-header-actions { flex-direction: column; gap: 8px; align-items: flex-end; }
         }
 
         /* Group Dropdown Styling */
@@ -85,9 +93,10 @@
     <header class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-50 top-0 border-b border-gray-100">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
-                <img src="logo sarwar computer center.jpeg" alt="Sarwar Computer Center Logo" class="w-12 h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-brand-orange object-cover bg-white">
+                <img src="logo%20sarwar%20computer%20center.jpeg" alt="SCC Logo" class="w-12 h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-brand-orange object-cover bg-white">
                 <h1 class="text-xl md:text-2xl font-bold text-brand-blue leading-tight tracking-tight">सरवाड़ कम्प्यूटर<br><span class="text-brand-orange text-xs md:text-sm">सेन्टर</span></h1>
             </div>
+            
             <nav class="hidden lg:flex gap-8 font-semibold text-gray-600">
                 <a href="#home" class="hover:text-brand-orange transition">Home</a>
                 <a href="#about" class="hover:text-brand-orange transition">About</a>
@@ -95,14 +104,18 @@
                 <a href="#gallery" class="hover:text-brand-orange transition">Gallery</a>
                 <a href="#contact" class="hover:text-brand-orange transition">Contact</a>
             </nav>
-            <a href="#admission" class="bg-brand-orange text-white px-5 py-2 md:px-6 md:py-2.5 rounded-full font-bold hover:bg-orange-600 transition shadow-lg shadow-orange-500/30 hover:scale-105 transform duration-300 text-sm md:text-base">Admission</a>
+
+            <div class="flex items-center gap-3 mobile-header-actions">
+                <div id="google_translate_element"></div>
+                <a href="#admission" class="bg-brand-orange text-white px-4 py-2 md:px-6 md:py-2.5 rounded-full font-bold hover:bg-orange-600 transition shadow-lg shadow-orange-500/30 hover:scale-105 transform duration-300 text-xs md:text-base whitespace-nowrap">Admission</a>
+            </div>
         </div>
     </header>
 
-    <section id="home" class="pt-28 pb-16 md:pt-32 md:pb-20 bg-brand-blue text-white relative overflow-hidden">
+    <section id="home" class="pt-32 pb-16 md:pt-40 md:pb-20 bg-brand-blue text-white relative overflow-hidden">
         
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Students studying computer" class="w-full h-full object-cover opacity-20">
+            <img src="studentstudy.jpeg" alt="Students studying computer" class="w-full h-full object-cover opacity-20">
             <div class="absolute inset-0 bg-gradient-to-r from-brand-blue via-brand-blue/85 to-brand-blue/50"></div>
         </div>
 
@@ -111,20 +124,20 @@
         
         <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-10 md:gap-12 items-center relative z-10">
             <div data-aos="fade-right" data-aos-duration="1200">
-                <div class="inline-block bg-white/10 px-4 py-1.5 rounded-full text-xs md:text-sm font-semibold mb-6 border border-white/20 text-orange-300 backdrop-blur-sm shadow-sm">
+                <div class="inline-block bg-white/10 px-4 py-1.5 rounded-full text-xs md:text-sm font-semibold mb-6 border border-white/20 text-orange-300 backdrop-blur-sm shadow-sm translate-text">
                     ⭐ सरवाड़ का सर्वश्रेष्ठ कम्प्यूटर सेन्टर
                 </div>
-                <h2 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 drop-shadow-md">
+                <h2 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 drop-shadow-md translate-text">
                     स्किल सीखे, आगे बढे🚀💻
                 </h2>
-                <p class="text-base md:text-xl mb-8 text-gray-200 font-medium leading-relaxed drop-shadow-sm">
+                <p class="text-base md:text-xl mb-8 text-gray-200 font-medium leading-relaxed drop-shadow-sm translate-text">
                    "अपने करियर को दें नई उड़ान, एडवांस कंप्यूटर स्किल्स के साथ!" <strong class="text-white">Sarwar Computer Center</strong> लाया है आपके लिए सबसे एडवांस कम्प्यूटर कोर्सेस!
                 </p>
                 
                 <div class="bg-gradient-to-r from-orange-600 to-yellow-500 p-1 rounded-2xl shadow-2xl mb-8 transform transition hover:scale-[1.02]" data-aos="zoom-in" data-aos-delay="300">
                     <div class="bg-brand-blue/90 backdrop-blur-sm rounded-xl p-4 md:p-5 text-center border border-white/10">
-                        <p class="text-base md:text-lg font-bold text-white">🔥 मेगा ऑफर: कोई भी 1 कोर्स करें, और उसके साथ</p>
-                        <p class="text-xl md:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-300 mt-1 drop-shadow-sm">2 कोर्स (AI & Graphic Design) बिल्कुल फ्री पाएं!</p>
+                        <p class="text-base md:text-lg font-bold text-white translate-text">🔥 मेगा ऑफर: कोई भी 1 कोर्स करें, और उसके साथ</p>
+                        <p class="text-xl md:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-300 mt-1 drop-shadow-sm translate-text">2 कोर्स (AI & Graphic Design) बिल्कुल फ्री पाएं!</p>
                     </div>
                 </div>
 
@@ -140,6 +153,11 @@
                         <a href="https://maps.google.com/maps?q=26.0650966,75.0154186&t=&z=17&ie=UTF8&iwloc=&output=embed" target="_blank" class="w-12 h-12 rounded-full bg-white/10 border border-white/30 flex items-center justify-center text-xl hover:bg-green-600 text-white transition backdrop-blur-sm shadow-lg"><i class="fa-solid fa-map-location-dot"></i></a>
                     </div>
                 </div>
+            </div>
+            
+            <div data-aos="fade-left" data-aos-duration="1200" class="relative hidden lg:block">
+                <div class="absolute inset-0 bg-gradient-to-tr from-brand-orange to-blue-500 rounded-3xl transform rotate-3 scale-105 opacity-50 blur-lg"></div>
+                <img src="studentstudy.jpeg" alt="Student learning" class="rounded-3xl shadow-2xl relative z-10 border-4 border-white/10 object-cover h-[500px] w-full floating-element" style="animation-duration: 8s;">
             </div>
         </div>
     </section>
@@ -440,6 +458,13 @@
     <a href="https://wa.me/919251000209?text=Hello%20Sarwar%20Computer%20Center,%20I%20want%20to%20know%20more%20about%20your%20courses." class="float-wa" target="_blank" title="Chat on WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'hi', includedLanguages: 'en,hi'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
