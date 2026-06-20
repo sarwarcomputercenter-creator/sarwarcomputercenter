@@ -56,7 +56,7 @@
     <header class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-50 top-0 border-b border-gray-100">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3 cursor-pointer">
-                <img src="logo%20sarwar%20computer%20center.jpeg?v=10" alt="SCC Logo" class="w-12 h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-brand-orange object-cover bg-white">
+                <img src="logo%20sarwar%20computer%20center.jpeg?v=11" alt="SCC Logo" class="w-12 h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-brand-orange object-cover bg-white">
                 <h1 class="text-xl md:text-2xl font-bold text-brand-blue leading-tight tracking-tight">सरवाड़ कम्प्यूटर<br><span class="text-brand-orange text-xs md:text-sm">सेन्टर</span></h1>
             </a>
             <a href="index.html" class="hidden lg:flex font-bold text-gray-600 hover:text-brand-orange transition"><i class="fa-solid fa-house mr-2"></i> होम पेज पर वापस जाएँ</a>
@@ -64,28 +64,42 @@
         </div>
     </header>
 
-    <!-- Dynamic Hero Section (Course Image & Title) -->
-    <section id="dynamicHero" class="pt-32 pb-16 md:pt-40 md:pb-20 text-white relative overflow-hidden">
-        <div class="absolute inset-0 bg-brand-blue/90 bg-gradient-to-t from-brand-blue via-brand-blue/80 to-transparent z-0"></div>
+    <!-- ✨ Dynamic Hero Section (Fixed Text Visibility & Added Online/Offline Banner) -->
+    <section id="dynamicHero" class="pt-32 pb-16 md:pt-40 md:pb-20 relative overflow-hidden">
+        <!-- हल्का डार्क ओवरले ताकि डिज़ाइन प्रीमियम लगे -->
+        <div class="absolute inset-0 bg-brand-blue/60 bg-gradient-to-t from-brand-blue via-brand-blue/50 to-transparent z-0"></div>
         
         <div class="container mx-auto px-4 text-center relative z-10" data-aos="fade-up">
-            <div class="inline-block bg-yellow-400 px-5 py-2 rounded-full text-xs md:text-sm font-bold mb-6 text-gray-900 shadow-md">
-                ⭐ प्रीमियम कोर्स सिलेबस
-            </div>
-            <h2 id="courseTitle" class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-6 drop-shadow-lg">
-                Loading Course...
-            </h2>
-            <p id="courseDesc" class="text-lg md:text-2xl text-gray-200 font-medium mb-8">
-                इस कोर्स की पूरी जानकारी नीचे दी गई है।
-            </p>
             
-            <a href="#admission" class="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-yellow-500 text-gray-900 px-8 py-3.5 rounded-full font-bold text-lg hover:scale-105 transition shadow-[0_10px_20px_rgba(234,88,12,0.4)]">
-                <i class="fa-solid fa-download"></i> एडमिशन डिटेल्स लें
-            </a>
+            <!-- डार्क ग्लास बॉक्स (इससे टेक्स्ट 100% साफ दिखेगा) -->
+            <div class="max-w-4xl mx-auto bg-black/60 backdrop-blur-md p-8 md:p-12 rounded-[2rem] border border-white/20 shadow-2xl">
+                
+                <div class="inline-block bg-yellow-400 px-5 py-2 rounded-full text-xs md:text-sm font-bold mb-6 text-gray-900 shadow-md">
+                    ⭐ प्रीमियम कोर्स सिलेबस
+                </div>
+                
+                <h2 id="courseTitle" class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-4 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+                    Loading Course...
+                </h2>
+                
+                <p id="courseDesc" class="text-lg md:text-xl text-yellow-300 font-semibold mb-6 drop-shadow-md">
+                    इस कोर्स की पूरी जानकारी नीचे दी गई है।
+                </p>
+
+                <!-- ✨ NEW: ONLINE/OFFLINE Availability Highlight -->
+                <div class="bg-gradient-to-r from-green-500 to-emerald-600 text-white font-black px-6 py-2 md:py-3 rounded-full mb-8 inline-block shadow-[0_5px_15px_rgba(34,197,94,0.4)] tracking-wide border-2 border-green-300">
+                    <i class="fa-solid fa-laptop-house text-lg mr-1"></i> ONLINE / OFFLINE Course Available
+                </div>
+                <br>
+                
+                <a href="#admission" class="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-yellow-500 text-gray-900 px-8 py-3.5 rounded-full font-bold text-lg hover:scale-105 transition shadow-[0_10px_20px_rgba(234,88,12,0.4)]">
+                    <i class="fa-solid fa-download"></i> एडमिशन डिटेल्स लें
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Dynamic Syllabus Section -->
+    <!-- ✨ Dynamic Syllabus Section with Detailed AI Descriptions -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4 max-w-5xl">
             <div class="text-center mb-12" data-aos="fade-up">
@@ -99,11 +113,11 @@
         </div>
     </section>
 
-    <!-- Admission Form Section (Exact replica of main page) -->
+    <!-- Admission Form Section -->
     <section id="admission" class="py-16 md:py-20 bg-brand-blue text-white relative overflow-hidden border-t-4 border-brand-orange">
         <div class="container mx-auto px-4 max-w-4xl">
             <div class="text-center mb-10" data-aos="fade-up">
-                <h3 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">एडमिशन / <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-300">पूछताछ</span></h3>
+                <h3 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">नए बैच के लिए <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-300">एडमिशन शुरू!</span></h3>
                 <p class="text-sm md:text-lg text-gray-300">कोर्स की फीस, सिलेबस और <strong class="text-yellow-400">मेगा ऑफर्स</strong> की पूरी जानकारी के लिए नीचे अपनी डिटेल दें।</p>
             </div>
             
@@ -131,7 +145,8 @@
                     
                     <div class="mb-8">
                         <label class="block text-sm font-bold mb-2 text-gray-600">कोर्स चुनें (Auto Selected)</label>
-                        <input type="text" id="courseSelect" readonly required class="w-full px-4 py-3 bg-gray-200 border border-gray-300 text-gray-700 rounded-xl font-bold">
+                        <!-- Form will automatically lock the course name selected by user -->
+                        <input type="text" id="courseSelect" readonly required class="w-full px-4 py-3 bg-gray-200 border border-gray-300 text-brand-blue rounded-xl font-bold shadow-inner">
                     </div>
 
                     <button type="submit" id="submitBtn" class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white font-bold py-4 rounded-xl hover:from-green-600 hover:to-green-700 transition shadow-lg flex justify-center items-center gap-2 text-lg transform hover:-translate-y-1">
@@ -155,79 +170,142 @@
     <script>
         AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 50 });
 
-        // 🧠 Dynamic Course Database (यहाँ हर कोर्स का सिलेबस और फोटो है)
+        // 🧠 ✨ NEW: Dynamic Course Database With Detailed AI Descriptions
         const coursesData = {
             "राजस्थान सरकार महिलाओं के लिए निःशुल्क Free Computer Course": {
                 title: "महिलाओं के लिए निःशुल्क कोर्स (RS-CIT/RS-CFA)",
                 desc: "राजस्थान सरकार की इंदिरा महिला शक्ति प्रशिक्षण योजना के तहत 100% फ्री ट्रेनिंग।",
                 image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-                points: ["बेसिक कंप्यूटर ज्ञान और इंटरनेट", "MS Word, Excel, PowerPoint", "टैली और अकाउंटिंग के बेसिक्स", "डिजिटल साक्षरता और साइबर सुरक्षा", "सरकारी सर्टिफिकेट", "महिलाओं को आत्मनिर्भर बनाने की ट्रेनिंग"]
+                points: [
+                    { title: "बेसिक कंप्यूटर ज्ञान और इंटरनेट", desc: "कंप्यूटर चालू/बंद करने से लेकर माउस, कीबोर्ड का उपयोग और इंटरनेट पर सुरक्षित ब्राउज़िंग करना सीखें।" },
+                    { title: "MS Word, Excel, PowerPoint", desc: "ऑफिस के काम आने वाले सॉफ्टवेयर सीखें जिससे आप आसानी से डेटा एंट्री, रिज्यूम और प्रेजेंटेशन बना सकें।" },
+                    { title: "टैली और अकाउंटिंग के बेसिक्स", desc: "अकाउंटिंग के मूल नियम और बिलिंग का बेसिक ज्ञान ताकि आप अकाउंटेंट की जॉब आसानी से कर सकें।" },
+                    { title: "डिजिटल साक्षरता और साइबर सुरक्षा", desc: "ऑनलाइन फ्रॉड से कैसे बचें, सुरक्षित पेमेंट (UPI) कैसे करें और डिजिटल दुनिया में सुरक्षित कैसे रहें।" },
+                    { title: "सरकारी मान्यता प्राप्त सर्टिफिकेट", desc: "कोर्स पूरा होने पर राजस्थान सरकार (RKCL) द्वारा मान्यता प्राप्त RS-CIT या RS-CFA का सर्टिफिकेट मिलेगा।" }
+                ]
             },
             "RS-CIT": {
                 title: "RS-CIT Course",
-                desc: "राजस्थान सरकार की सरकारी नौकरियों के लिए अनिवार्य कंप्यूटर सर्टिफिकेट।",
+                desc: "राजस्थान सरकार की सभी सरकारी नौकरियों के लिए अनिवार्य कंप्यूटर सर्टिफिकेट।",
                 image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-                points: ["कंप्यूटर का परिचय और ऑपरेटिंग सिस्टम", "Microsoft Word, Excel, PowerPoint (2010/2019)", "इंटरनेट, ईमेल और वेब ब्राउज़िंग", "डिजिटल पेमेंट (UPI, Net Banking)", "ई-गवर्नेंस और E-Mitra की सेवाएं", "साइबर सुरक्षा और IT एक्ट"]
+                points: [
+                    { title: "कंप्यूटर का परिचय और ऑपरेटिंग सिस्टम", desc: "कंप्यूटर की पीढ़ियां, हार्डवेयर-सॉफ्टवेयर की समझ और Windows 10 ऑपरेटिंग सिस्टम का पूरा उपयोग।" },
+                    { title: "MS Office 2010/2019", desc: "Microsoft Word, Excel और PowerPoint के ज़रिये प्रोफेशनल डॉक्यूमेंट और स्प्रेडशीट बनाना।" },
+                    { title: "इंटरनेट, ईमेल और वेब ब्राउज़िंग", desc: "सही तरीके से ईमेल भेजना, फाइल अटैच करना और इंटरनेट से सटीक जानकारी खोजना।" },
+                    { title: "ई-गवर्नेंस और E-Mitra की सेवाएं", desc: "SSO ID बनाना, आधार, पैन कार्ड, जन-आधार और अन्य सरकारी पोर्टल का उपयोग करना सीखें।" },
+                    { title: "साइबर सुरक्षा और डिजिटल पेमेंट", desc: "IT एक्ट की जानकारी, ऑनलाइन फ्रॉड से बचाव और सुरक्षित UPI / Net Banking का प्रयोग करना।" }
+                ]
             },
             "RS-CIT-AI": {
-                title: "RS-CIT-AI (Advance IT + Artificial Intelligence)",
-                desc: "बेसिक कंप्यूटर के साथ-साथ भविष्य की तकनीक (AI) सीखें।",
+                title: "RS-CIT-AI (Advance IT + AI)",
+                desc: "सरकारी सर्टिफिकेट के साथ-साथ भविष्य की तकनीक (Artificial Intelligence) सीखें।",
                 image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-                points: ["संपूर्ण RS-CIT सिलेबस", "आर्टिफिशियल इंटेलिजेंस (AI) का परिचय", "ChatGPT और Google Gemini का उपयोग", "AI से स्मार्ट वर्क और प्रेजेंटेशन बनाना", "ईमेल ड्राफ्टिंग और प्रॉम्प्ट इंजीनियरिंग बेसिक्स"]
+                points: [
+                    { title: "संपूर्ण RS-CIT सिलेबस", desc: "बेसिक कंप्यूटर, MS Office और इंटरनेट की पूरी जानकारी जो सरकारी नौकरी में काम आती है।" },
+                    { title: "आर्टिफिशियल इंटेलिजेंस (AI) का परिचय", desc: "AI क्या है, यह कैसे काम करता है और भविष्य की नौकरियों में इसका क्या महत्व होने वाला है।" },
+                    { title: "ChatGPT और Google Gemini का उपयोग", desc: "AI टूल्स का इस्तेमाल करके निबंध, ईमेल और किसी भी सवाल का जवाब चुटकियों में पाना।" },
+                    { title: "AI से स्मार्ट वर्क और प्रेजेंटेशन", desc: "घंटों का काम मिनटों में करना सीखें, AI टूल्स की मदद से ऑटोमैटिक पीपीटी और डिज़ाइन बनाना।" }
+                ]
             },
             "RCDTP": {
                 title: "RCDTP (Desktop Publishing)",
-                desc: "प्रिंटिंग, पब्लिशिंग और डिज़ाइन इंडस्ट्री का मास्टर कोर्स।",
+                desc: "प्रिंटिंग, पब्लिशिंग और ग्राफ़िक डिज़ाइन इंडस्ट्री का मास्टर कोर्स।",
                 image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-                points: ["CorelDraw में बैनर, पोस्टर और लोगो डिज़ाइन", "Adobe Photoshop में एडवांस्ड फोटो एडिटिंग", "हिंदी और अंग्रेजी टाइपिंग (Typing Skills)", "प्रिंटिंग सेटअप और कलर मैनेजमेंट", "PageMaker का बेसिक ज्ञान"]
+                points: [
+                    { title: "CorelDraw में एडवांस डिज़ाइनिंग", desc: "प्रोफेशनल लोगो (Logo), फ्लेक्स बैनर, विजिटिंग कार्ड और शादी के कार्ड डिज़ाइन करना सीखें।" },
+                    { title: "Adobe Photoshop एडिटिंग", desc: "फोटो को एडिट करना, बैकग्राउंड हटाना, कलर करेक्शन और पासपोर्ट साइज़ फोटो बनाना सीखें।" },
+                    { title: "हिंदी और अंग्रेजी टाइपिंग", desc: "प्रोफेशनल स्पीड के साथ हिंदी (Devlys/KrutiDev) और इंग्लिश टाइपिंग में महारत हासिल करें।" },
+                    { title: "प्रिंटिंग सेटअप और पेजमेकर", desc: "डिज़ाइन को प्रिंटर के लिए कैसे सेट करें और PageMaker में मैगज़ीन/किताब की सेटिंग कैसे करें।" }
+                ]
             },
             "RC-MOS": {
                 title: "RC-MOS (Microsoft Office Specialist)",
-                desc: "ऑफिस जॉब्स और डाटा एंट्री के लिए सबसे डिमांडिंग कोर्स।",
+                desc: "ऑफिस जॉब्स और डाटा एंट्री के लिए दुनिया का सबसे डिमांडिंग कोर्स।",
                 image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-                points: ["Advanced MS Word (Formatting & Drafting)", "Advanced MS Excel (Data Entry, VLOOKUP, Pivot)", "MS PowerPoint (Professional Presentations)", "MS Access / Outlook Emails", "ऑफिस प्रोडक्टिविटी टिप्स"]
+                points: [
+                    { title: "Advanced MS Word", desc: "प्रोफेशनल ड्राफ्टिंग, लेटर हेड, मेल मर्ज (Mail Merge) और ई-बुक फॉर्मेटिंग करना सीखें।" },
+                    { title: "Advanced MS Excel", desc: "डाटा एंट्री, एडवांस फॉर्मूले (VLOOKUP, HLOOKUP), पिवट टेबल (Pivot Table) और चार्ट्स बनाना।" },
+                    { title: "MS PowerPoint & Presentations", desc: "मीटिंग्स और स्कूल/कॉलेज के लिए शानदार एनिमेशन वाली प्रेजेंटेशन तैयार करना।" },
+                    { title: "MS Access और आउटलुक", desc: "कस्टमर का डाटा सुरक्षित रखना और MS Outlook के ज़रिये प्रोफेशनल ईमेल मैनेजमेंट।" }
+                ]
             },
             "Tally Prime": {
-                title: "Tally Prime (Essential & Professional)",
-                desc: "इंडस्ट्री स्टैण्डर्ड एकाउंटिंग सॉफ्टवेयर सीखकर अकाउंटेंट बनें।",
+                title: "Tally Prime (Essential & Pro)",
+                desc: "इंडस्ट्री स्टैण्डर्ड एकाउंटिंग सॉफ्टवेयर सीखकर एक सफल अकाउंटेंट बनें।",
                 image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-                points: ["अकाउंटिंग के नियम (Debit/Credit Rules)", "Inventory Management (स्टॉक मेंटेन करना)", "GST Returns (GSTR-1, 2, 3B)", "TDS & Payroll Management", "Bank Reconciliation & Balance Sheet"]
+                points: [
+                    { title: "अकाउंटिंग के नियम (Rules)", desc: "डेबिट (Debit), क्रेडिट (Credit) के नियम और एकाउंटिंग की मूल बातें आसान भाषा में।" },
+                    { title: "Inventory Management", desc: "गोदाम का स्टॉक मेंटेन करना, खरीद-बिक्री के बिल बनाना और बारकोड स्कैनिंग।" },
+                    { title: "GST Returns और टैक्सेशन", desc: "GST क्या है? Tally से ऑटोमैटिक GSTR-1, 2, 3B और E-way Bill कैसे जनरेट करें।" },
+                    { title: "TDS, TCS & Payroll", desc: "कर्मचारियों की सैलरी (Payroll) बनाना, अटेंडेंस और टैक्स कटौती का पूरा मैनेजमेंट।" },
+                    { title: "Bank Reconciliation & रिपोर्ट्स", desc: "बैंक स्टेटमेंट का Tally से मिलान करना और बैलेंस शीट (Balance Sheet) तैयार करना।" }
+                ]
             },
             "RS-CFA": {
                 title: "RS-CFA (Financial Accounting)",
-                desc: "राजस्थान ज्ञान केंद्र द्वारा मान्यता प्राप्त फाइनेंसियल एकाउंटिंग।",
+                desc: "राजस्थान ज्ञान केंद्र द्वारा मान्यता प्राप्त फाइनेंसियल एकाउंटिंग कोर्स।",
                 image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-                points: ["मैनुअल अकाउंटिंग और बुक कीपिंग", "Tally ERP 9 / Prime का पूरा उपयोग", "वाउचर एंट्री और लेजर क्रिएशन", "टैक्सेशन बेसिक्स", "फाइनल अकाउंट्स तैयार करना"]
+                points: [
+                    { title: "मैनुअल अकाउंटिंग", desc: "बिना कंप्यूटर के खातों को समझना, जर्नल एंट्री पास करना और बुक कीपिंग सीखना।" },
+                    { title: "Tally ERP 9 / Prime", desc: "टैली सॉफ्टवेयर को इनस्टॉल करने से लेकर कंपनी बनाने और लेजर क्रिएशन का पूरा प्रोसेस।" },
+                    { title: "वाउचर एंट्री और रिपोर्टिंग", desc: "पेमेंट, रिसीप्ट, कंट्रा और जर्नल वाउचर्स की एंट्री करना और ट्रायल बैलेंस देखना।" },
+                    { title: "टैक्सेशन बेसिक्स", desc: "व्यापार में लगने वाले टैक्स, GST कैलकुलेशन और रिटर्न फाइलिंग की मूलभूत जानकारी।" }
+                ]
             },
             "Advance Excel / AI": {
                 title: "Advance Excel with AI",
-                desc: "डेटा को स्मार्ट तरीके से हैंडल करें और AI का जादू देखें।",
+                desc: "डेटा को स्मार्ट तरीके से हैंडल करें और एक्सेल में AI का जादू देखें।",
                 image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-                points: ["Advanced Formulas (VLOOKUP, INDEX, MATCH)", "Pivot Tables & Dynamic Dashboards", "Data Validation & Conditional Formatting", "Excel में AI का उपयोग (Formula Generation)", "Macros & VBA Basics"]
+                points: [
+                    { title: "Advanced Formulas", desc: "VLOOKUP, INDEX, MATCH, IF, COUNTIF जैसे 50+ एडवांस फॉर्मूलों में मास्टर बनें।" },
+                    { title: "Dynamic Dashboards", desc: "पिवट टेबल, स्लाइसर और चार्ट्स का उपयोग करके लाइव बिज़नेस रिपोर्ट (Dashboard) बनाना।" },
+                    { title: "Data Validation & Formatting", desc: "गलत डाटा एंट्री को रोकना और महत्वपूर्ण डाटा को रंगों के माध्यम से हाईलाइट करना।" },
+                    { title: "Excel में AI का उपयोग", desc: "AI टूल्स की मदद से बिना याद किए कठिन से कठिन एक्सेल फॉर्मूले ऑटो-जनरेट करना।" }
+                ]
             },
             "AI Prompt Engineering": {
                 title: "AI Prompt Engineering",
-                desc: "भविष्य की सबसे डिमांडिंग स्किल - AI से बात करना सीखें।",
+                desc: "भविष्य की सबसे हाई-पेइंग स्किल - AI बॉट्स से सही बात करना सीखें।",
                 image: "https://images.unsplash.com/photo-1676299081847-824916de030a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-                points: ["AI मॉडल्स (ChatGPT, Claude, Gemini) की समझ", "सही प्रॉम्प्ट (कमांड) लिखने की कला", "AI से कंटेंट और मार्केटिंग स्क्रिप्ट लिखवाना", "AI Image Generation (Midjourney/DALL-E)", "घंटों का काम मिनटों में ऑटोमेट करना"]
+                points: [
+                    { title: "AI मॉडल्स की गहरी समझ", desc: "ChatGPT 4, Claude, Gemini और Perplexity जैसे मॉडल्स कैसे सोचते और काम करते हैं।" },
+                    { title: "सही प्रॉम्प्ट लिखने की कला", desc: "एक सामान्य प्रॉम्प्ट और एक मास्टर प्रॉम्प्ट में क्या अंतर है? 100% सही रिजल्ट कैसे पाएं।" },
+                    { title: "AI Image Generation", desc: "Midjourney, DALL-E और Leonardo AI का उपयोग करके कल्पनाओं को खूबसूरत फोटो में बदलना।" },
+                    { title: "घंटों का काम मिनटों में ऑटोमेट करना", desc: "कोडिंग, स्क्रिप्ट राइटिंग, बिज़नेस प्रपोज़ल और ईमेल ऑटोमेशन में AI का प्रयोग।" }
+                ]
             },
             "Digital Marketing": {
-                title: "Digital Marketing",
-                desc: "अपना ऑनलाइन बिज़नेस बढ़ाएं या एक डिजिटल मार्केटर बनें।",
+                title: "Digital Marketing Masterclass",
+                desc: "अपना ऑनलाइन बिज़नेस बढ़ाएं या एक हाई-सैलरी डिजिटल मार्केटर बनें।",
                 image: "https://images.unsplash.com/photo-1432888622747-4eb9a8f2c1d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-                points: ["SEO (Google पर वेबसाइट रैंक करना)", "Social Media Marketing (Instagram/FB Growth)", "Facebook Ads & Google Ads चलाना", "YouTube Marketing & Video SEO", "Lead Generation & Email Marketing"]
+                points: [
+                    { title: "Search Engine Optimization (SEO)", desc: "अपनी वेबसाइट या ब्लॉग को Google के पहले पेज पर फ्री में कैसे रैंक करवाएं।" },
+                    { title: "Social Media Marketing", desc: "Instagram, Facebook और LinkedIn पर फॉलोअर्स बढ़ाना और वायरल कंटेंट बनाना।" },
+                    { title: "Facebook & Google Ads", desc: "पैसे लगाकर सही कस्टमर तक विज्ञापन पहुँचाना (Paid Advertising) और लीड्स लाना।" },
+                    { title: "YouTube Video SEO", desc: "यूट्यूब चैनल बनाकर वीडियो को वायरल कैसे करें और सही टैग्स/डिस्क्रिप्शन कैसे लगाएं।" }
+                ]
             },
             "Graphic & Web Designing": {
                 title: "Graphic & Web Designing",
-                desc: "क्रिएटिव डिज़ाइन और वेबसाइट डेवलपमेंट का कॉम्बो।",
+                desc: "क्रिएटिव डिज़ाइन और वेबसाइट डेवलपमेंट का अल्टीमेट कॉम्बो।",
                 image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-                points: ["Canva Pro & Figma Mastery (UI/UX)", "Social Media Posts, Banners & Logo Design", "HTML & CSS के बेसिक्स", "WordPress पर बिना कोडिंग वेबसाइट बनाना", "डोमेन और होस्टिंग सेटअप"]
+                points: [
+                    { title: "Canva Pro & Figma Mastery", desc: "UI/UX डिज़ाइन, सोशल मीडिया पोस्ट, प्रीमियम बैनर और इन्फोग्राफिक्स बनाना।" },
+                    { title: "HTML, CSS & JavaScript", desc: "वेबसाइट का ढांचा (Structure) और डिज़ाइन कैसे तैयार करें, इसका बेसिक से एडवांस ज्ञान।" },
+                    { title: "WordPress वेबसाइट डेवलपमेंट", desc: "बिना किसी कोडिंग नॉलेज के ई-कॉमर्स या ब्लॉगिंग वेबसाइट (WordPress) तैयार करना।" },
+                    { title: "डोमेन और होस्टिंग सेटअप", desc: "वेबसाइट को लाइव करने के लिए डोमेन-होस्टिंग खरीदना और SSL सर्टिफिकेट लगाना।" }
+                ]
             },
             "RS-CEE": {
-                title: "RS-CEE (Spoken English & PD)",
-                desc: "अंग्रेजी बोलना सीखें और अपना कॉन्फिडेंस बढ़ाएं।",
+                title: "RS-CEE (Spoken English)",
+                desc: "धाराप्रवाह अंग्रेजी बोलना सीखें और अपनी पर्सनालिटी में निखार लाएं।",
                 image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-                points: ["Spoken English & Grammar Basics", "Interview Preparation & Resume Building", "Communication Skills", "Personality Development", "पब्लिक स्पीकिंग और कॉन्फिडेंस बिल्डिंग"]
+                points: [
+                    { title: "Spoken English & Grammar Basics", desc: "Tenses, Vocabulary और रोजमर्रा की जिंदगी में उपयोग होने वाली इंग्लिश के वाक्य।" },
+                    { title: "Interview Preparation", desc: "जॉब इंटरव्यू में बेझिझक कैसे बोलें, सवालों के सही जवाब कैसे दें और Resume कैसे बनाएं।" },
+                    { title: "Personality Development (PD)", desc: "बॉडी लैंग्वेज, ड्रेसिंग सेंस और लोगों के सामने खुद को प्रभावशाली तरीके से पेश करना।" },
+                    { title: "पब्लिक स्पीकिंग और कॉन्फिडेंस", desc: "स्टेज का डर (Stage Fright) खत्म करना और 100 लोगों के सामने कॉन्फिडेंस से बोलना।" }
+                ]
             }
         };
 
@@ -235,29 +313,32 @@
         const urlParams = new URLSearchParams(window.location.search);
         let courseName = urlParams.get('course');
         
-        // अगर कोई सीधा पेज खोले बिना कोर्स के, तो डिफ़ॉल्ट RS-CIT दिखाओ
+        // अगर कोर्स का नाम नहीं मिला तो डिफ़ॉल्ट RS-CIT दिखाना
         if(!courseName || !coursesData[courseName]) {
             courseName = "RS-CIT";
         }
 
         const data = coursesData[courseName];
 
-        // पेज पर डेटा सेट करना
+        // 🖼️ पेज पर डेटा सेट करना
         document.getElementById('dynamicHero').style.backgroundImage = `url('${data.image}')`;
         document.getElementById('courseTitle').innerText = data.title;
         document.getElementById('courseDesc').innerText = data.desc;
-        document.getElementById('courseSelect').value = courseName; // फॉर्म में ऑटो-फिल
+        document.getElementById('courseSelect').value = courseName; 
 
-        // सिलेबस के पॉइंट्स ग्रिड में डालना
+        // ✨ कोर्स के सिलेबस पॉइंट्स को ग्रिड में इंजेक्ट करना
         const syllabusGrid = document.getElementById('syllabusGrid');
         data.points.forEach((point, index) => {
             let delay = index * 100;
             syllabusGrid.innerHTML += `
-                <div class="bg-blue-50 border-l-4 border-brand-orange p-5 rounded-r-2xl shadow-sm flex items-center gap-4 transform transition hover:-translate-y-1 hover:shadow-md" data-aos="fade-up" data-aos-delay="${delay}">
-                    <div class="bg-white text-brand-orange w-10 h-10 rounded-full flex items-center justify-center font-bold shadow flex-shrink-0">
-                        <i class="fa-solid fa-check"></i>
+                <div class="bg-blue-50/50 border border-blue-100 border-l-4 border-l-brand-orange p-5 md:p-6 rounded-r-2xl shadow-sm flex gap-4 md:gap-5 transform transition hover:-translate-y-2 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)] hover:bg-white" data-aos="fade-up" data-aos-delay="${delay}">
+                    <div class="bg-white text-brand-orange w-12 h-12 rounded-full flex items-center justify-center font-black shadow-md flex-shrink-0 mt-1 border border-orange-100">
+                        <i class="fa-solid fa-check text-xl"></i>
                     </div>
-                    <p class="text-gray-800 font-semibold md:text-lg">${point}</p>
+                    <div>
+                        <h5 class="text-brand-blue font-bold text-lg md:text-xl mb-2">${point.title}</h5>
+                        <p class="text-gray-600 text-sm md:text-base leading-relaxed font-medium">${point.desc}</p>
+                    </div>
                 </div>
             `;
         });
