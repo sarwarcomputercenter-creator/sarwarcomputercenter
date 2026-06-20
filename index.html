@@ -689,11 +689,12 @@
         }
 
         // Card Click Logic
-        function inquireCourse(courseName) {
-            const whatsappNumber = "919251000209";
-            const message = `नमस्ते! मैं आपके सेन्टर से *${courseName}* की जानकारी लेना चाहता/चाहती हूँ। कृपया मुझे डिटेल्स दें।`;
-            window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
-        }
+        ```javascript
+// Card Click Logic: Redirect to Dynamic Course Details Page
+function inquireCourse(courseName) {
+    // यह कोड यूजर को नए पेज पर भेजेगा और URL में कोर्स का नाम लगा देगा
+    window.location.href = `course-details.html?course=${encodeURIComponent(courseName)}`;
+}
     </script>
 </body>
 </html>
