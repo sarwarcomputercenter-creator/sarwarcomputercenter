@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCC Store | Top Computers, Mobiles & Books</title>
+    <meta name="description" content="SCC Store - Best Deals on Laptops, Computers, Mobiles, Gadgets and Top Selling Motivation & Business Books. Buy now with heavy discounts!">
+    
+    <!-- Anti-Cache -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif; overflow-x: hidden; scroll-behavior: smooth; background-color: #f8fafc; }
+        .bg-brand-blue { background-color: #0f172a; } .text-brand-blue { color: #0f172a; }
+        .bg-brand-orange { background-color: #ea580c; } .text-brand-orange { color: #ea580c; }
+
+        /* Social & Float Buttons */
+        .sticky-social { position: fixed; top: 50%; left: 0; transform: translateY(-50%); z-index: 100; display: flex; flex-direction: column; gap: 5px; }
+        .sticky-social a { width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; transition: all 0.3s; border-radius: 0 10px 10px 0; box-shadow: 2px 2px 5px rgba(0,0,0,0.3); margin-left: -5px; }
+        .sticky-social a:hover { width: 60px; margin-left: 0; }
+        .social-yt { background-color: #FF0000; } .social-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); } .social-fb { background-color: #1877F2; } .social-map { background-color: #34A853; }
+        
+        .float-wa { position: fixed; width: 60px; height: 60px; bottom: 30px; right: 30px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 32px; box-shadow: 0px 4px 10px rgba(0,0,0,0.3); z-index: 100; transition: transform 0.3s; }
+        .float-wa:hover { transform: scale(1.1) rotate(10deg); }
+        .float-wa i { margin-top: 14px; }
+        
+        @media (max-width: 768px) {
+            .float-wa { right: 20px; bottom: 20px; } .sticky-social { display: none; }
+        }
+
+        /* Shop Card Hover Effect */
+        .product-card { transition: all 0.3s ease; }
+        .product-card:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); border-color: #ea580c; }
+        .book-img { filter: drop-shadow(5px 10px 10px rgba(0,0,0,0.3)); }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Social Media Bar -->
+    <div class="sticky-social">
+        <a href="https://www.youtube.com/@sarwarcomputer" target="_blank" class="social-yt" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.instagram.com/sarwarcomputercenter/" target="_blank" class="social-ig" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" target="_blank" class="social-fb" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://maps.google.com/maps?q=26.0650966,75.0154186&t=&z=17&ie=UTF8&iwloc=&output=embed" target="_blank" class="social-map" title="Google Maps"><i class="fa-solid fa-map-location-dot"></i></a>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-50 top-0 border-b border-gray-100">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 cursor-pointer">
+                <img src="logo%20sarwar%20computer%20center.jpeg?v=12" alt="SCC Logo" class="w-12 h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-brand-orange object-cover bg-white">
+                <h1 class="text-xl md:text-2xl font-bold text-brand-blue leading-tight tracking-tight">SCC <span class="text-brand-orange text-xs md:text-sm">Store</span></h1>
+            </a>
+            <a href="index.html" class="hidden md:flex font-bold text-gray-600 hover:text-brand-orange transition"><i class="fa-solid fa-house mr-2"></i> होम पेज पर वापस जाएँ</a>
+            <a href="#books" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 md:px-6 md:py-2.5 rounded-full font-bold hover:scale-105 transition shadow-lg text-xs md:text-base whitespace-nowrap">📚 बुक्स देखें</a>
+        </div>
+    </header>
+
+    <!-- Shop Hero Section -->
+    <section class="pt-32 pb-12 bg-gradient-to-r from-gray-900 via-brand-blue to-gray-900 text-white text-center relative overflow-hidden border-b-4 border-yellow-400">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-yellow-500/10 rounded-full blur-[80px]"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-pink-500/10 rounded-full blur-[80px]"></div>
+        
+        <div class="container mx-auto px-4 relative z-10" data-aos="fade-up">
+            <h2 class="text-3xl md:text-5xl font-extrabold mb-4">💻 हमारी सुझाई गई बेस्ट <span class="text-yellow-400">डील्स!</span></h2>
+            <p class="text-gray-300 text-base md:text-lg max-w-3xl mx-auto font-medium mb-6">यहाँ हमने आपके लिए अमेज़न की सबसे बेहतरीन और भरोसेमंद डील्स (Laptops, Gadgets & Books) छाँट कर रखी हैं। कोई भी प्रोडक्ट खरीदकर अपनी स्किल्स और नॉलेज को बढ़ाएं।</p>
+            <div class="flex justify-center gap-4 flex-wrap">
+                <a href="#laptops" class="bg-white text-gray-900 px-5 py-2 rounded-full font-bold text-sm hover:bg-gray-200 transition">💻 लैपटॉप्स</a>
+                <a href="#gadgets" class="bg-white text-gray-900 px-5 py-2 rounded-full font-bold text-sm hover:bg-gray-200 transition">📱 मोबाइल्स</a>
+                <a href="#books" class="bg-yellow-400 text-gray-900 px-5 py-2 rounded-full font-bold text-sm hover:bg-yellow-500 transition shadow-lg">📚 बेस्ट बुक्स</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 👉 SECTION 1: Laptops & Computers -->
+    <section id="laptops" class="py-12 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h3 class="text-2xl md:text-3xl font-bold text-brand-blue border-l-4 border-brand-orange pl-3 mb-8" data-aos="fade-right">बेस्ट लैपटॉप (Students & Office के लिए)</h3>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Laptop 1 -->
+                <div class="product-card bg-white border border-gray-200 rounded-2xl p-5 relative" data-aos="fade-up">
+                    <div class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl">-30% OFF</div>
+                    <div class="flex justify-center mb-4 h-40">
+                        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500&q=80" alt="HP Laptop" class="object-contain h-full">
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-1 line-clamp-2">HP 15s Intel Core i3 12th Gen Laptop</h4>
+                    <p class="text-sm text-gray-500 mb-3">8GB RAM | 512GB SSD | Win 11 | MS Office | FHD</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xl font-black text-brand-blue">Best Price</span>
+                        <span class="text-xs text-green-600 font-bold bg-green-100 px-2 py-1 rounded">Top Rated</span>
+                    </div>
+                    <a href="https://amzn.to/4a8lJjh" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2.5 rounded-lg transition shadow-md">
+                        <i class="fa-brands fa-amazon text-lg mr-1"></i> Amazon से खरीदें
+                    </a>
+                </div>
+
+                <!-- Laptop 2 -->
+                <div class="product-card bg-white border border-gray-200 rounded-2xl p-5 relative" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute top-0 right-0 bg-brand-blue text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl">Best Seller</div>
+                    <div class="flex justify-center mb-4 h-40">
+                        <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=500&q=80" alt="Lenovo Laptop" class="object-contain h-full">
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-1 line-clamp-2">Lenovo IdeaPad Slim 3 Intel Core i3</h4>
+                    <p class="text-sm text-gray-500 mb-3">8GB RAM | 256GB SSD | Thin & Light | 15.6" Screen</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xl font-black text-brand-blue">Best Price</span>
+                        <span class="text-xs text-green-600 font-bold bg-green-100 px-2 py-1 rounded">Student Choice</span>
+                    </div>
+                    <a href="https://amzn.to/4a8lJjh" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2.5 rounded-lg transition shadow-md">
+                        <i class="fa-brands fa-amazon text-lg mr-1"></i> Amazon से खरीदें
+                    </a>
+                </div>
+                
+                <!-- Laptop 3 -->
+                <div class="product-card bg-white border border-gray-200 rounded-2xl p-5 relative" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl">Gaming & Design</div>
+                    <div class="flex justify-center mb-4 h-40">
+                        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=500&q=80" alt="Dell Laptop" class="object-contain h-full">
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-1 line-clamp-2">Dell 14 / Acer Aspire Core i5 Laptop</h4>
+                    <p class="text-sm text-gray-500 mb-3">16GB RAM | 512GB SSD | Fast Processing | Heavy Duty</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xl font-black text-brand-blue">Best Price</span>
+                        <span class="text-xs text-purple-600 font-bold bg-purple-100 px-2 py-1 rounded">High Speed</span>
+                    </div>
+                    <a href="https://amzn.to/4a8lJjh" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2.5 rounded-lg transition shadow-md">
+                        <i class="fa-brands fa-amazon text-lg mr-1"></i> Amazon से खरीदें
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 👉 SECTION 2: Mobiles & Gadgets -->
+    <section id="gadgets" class="py-12 bg-gray-50 border-t border-gray-200">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h3 class="text-2xl md:text-3xl font-bold text-brand-blue border-l-4 border-brand-orange pl-3 mb-8" data-aos="fade-right">ट्रेंडिंग 5G मोबाइल्स और गैजेट्स</h3>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
+                <!-- Mobile -->
+                <div class="product-card bg-white border border-gray-200 rounded-2xl p-4 relative" data-aos="fade-up">
+                    <div class="flex justify-center mb-3 h-32">
+                        <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500&q=80" alt="Mobile" class="object-contain h-full">
+                    </div>
+                    <h4 class="font-bold text-gray-800 text-sm mb-1 line-clamp-2">Redmi / Samsung 5G Smartphones</h4>
+                    <p class="text-xs text-gray-500 mb-3">Latest 5G, Great Camera & Battery</p>
+                    <a href="https://amzn.to/4a8lJjh" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 rounded-lg transition text-sm shadow">
+                        Buy Now
+                    </a>
+                </div>
+
+                <!-- Pendrive -->
+                <div class="product-card bg-white border border-gray-200 rounded-2xl p-4 relative" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex justify-center mb-3 h-32">
+                        <img src="https://images.unsplash.com/photo-1550005936-749ce0353c2b?w=500&q=80" alt="Pendrive" class="object-contain h-full">
+                    </div>
+                    <h4 class="font-bold text-gray-800 text-sm mb-1 line-clamp-2">SanDisk Cruzer Blade 32GB/64GB Pen Drive</h4>
+                    <p class="text-xs text-gray-500 mb-3">Safe Data Storage for Students</p>
+                    <a href="https://amzn.to/4a8lJjh" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 rounded-lg transition text-sm shadow">
+                        Buy Now
+                    </a>
+                </div>
+                
+                <!-- Keyboard/Mouse -->
+                <div class="product-card bg-white border border-gray-200 rounded-2xl p-4 relative" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex justify-center mb-3 h-32">
+                        <img src="https://images.unsplash.com/photo-1595225476474-87563907a212?w=500&q=80" alt="Keyboard" class="object-contain h-full">
+                    </div>
+                    <h4 class="font-bold text-gray-800 text-sm mb-1 line-clamp-2">Dell/HP Wireless Keyboard & Mouse Combo</h4>
+                    <p class="text-xs text-gray-500 mb-3">Best for Office Work & Tally</p>
+                    <a href="https://amzn.to/4a8lJjh" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 rounded-lg transition text-sm shadow">
+                        Buy Now
+                    </a>
+                </div>
+
+                <!-- Earphones -->
+                <div class="product-card bg-white border border-gray-200 rounded-2xl p-4 relative" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex justify-center mb-3 h-32">
+                        <img src="https://images.unsplash.com/photo-1572569533902-4e4fa4dbbd71?w=500&q=80" alt="Earphones" class="object-contain h-full">
+                    </div>
+                    <h4 class="font-bold text-gray-800 text-sm mb-1 line-clamp-2">boAt Bassheads Earphones & Earbuds</h4>
+                    <p class="text-xs text-gray-500 mb-3">Best Sound Quality & Call Mic</p>
+                    <a href="https://amzn.to/4a8lJjh" target="_blank" class="block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-2 rounded-lg transition text-sm shadow">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 👉 SECTION 3: Motivation & Business Books (NEW) -->
+    <section id="books" class="py-16 bg-gradient-to-b from-white to-gray-100 border-t border-gray-200">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h3 class="text-3xl md:text-4xl font-extrabold text-brand-blue mb-4">📚 जीवन बदलने वाली किताबें</h3>
+                <p class="text-gray-600 text-base md:text-lg">मोटिवेशन, सेल्फ-इम्प्रूवमेंट, और बिज़नेस की वो किताबें जिन्होंने लाखों लोगों की सोच और ज़िंदगी बदल दी। इन्हें ज़रूर पढ़ें!</p>
+                <div class="w-24 h-1.5 bg-brand-orange mx-auto mt-4 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Book 1 -->
+                <div class="product-card bg-white border border-gray-200 rounded-3xl p-6 relative flex flex-col items-center text-center" data-aos="zoom-in">
+                    <div class="absolute -top-4 bg-purple-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg">Must Read</div>
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&q=80" alt="Rich Dad Poor Dad" class="h-48 object-cover mb-5 rounded-lg book-img">
+                    <h4 class="font-bold text-lg text-gray-800 mb-2">Rich Dad Poor Dad (Hindi)</h4>
+                    <p class="text-sm text-gray-600 mb-4 flex-grow">पैसे की समझ और अमीर बनने का रहस्य। यह किताब हर युवा को पढ़नी चाहिए।</p>
+                    <a href="https://amzn.to/4a8lJjh" target="_blank" class="w-full bg-brand-blue hover:bg-blue-800 text-white font-bold py-3 rounded-xl transition shadow flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-cart-shopping"></i> Amazon से खरीदें
+                    </a>
+                </div>
+
+                <!-- Book 2 -->
+                <div class="product-card bg-white border border-gray-200 rounded-3xl p-6 relative flex flex-col items-center text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="absolute -top-4 bg-green-500 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg">Habit Building</div>
+                    <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=400&q=80" alt="Atomic Habits" class="h-48 object-cover mb-5 rounded-lg book-img">
+                    <h4 class="font-bold text-lg text-gray-800 mb-2">Atomic Habits (Hindi)</h4>
+                    <p class="text-sm text-gray-600 mb-4 flex-grow">छोटे-छोटे बदलावों से बड़ी सफलता कैसे पाएं? आदतें बदलने की गज़ब की किताब।</p>
+                    <a href="https://amzn.to/4a8lJjh" target="_blank" class="w-full bg-brand-blue hover:bg-blue-800 text-white font-bold py-3 rounded-xl transition shadow flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-cart-shopping"></i> Amazon से खरीदें
+                    </a>
+                </div>
+
+                <!-- Book 3 -->
+                <div class="product-card bg-white border border-gray-200 rounded-3xl p-6 relative flex flex-col items-center text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="absolute -top-4 bg-brand-orange text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg">Motivation</div>
+                    <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=400&q=80" alt="Jeet Aapki" class="h-48 object-cover mb-5 rounded-lg book-img">
+                    <h4 class="font-bold text-lg text-gray-800 mb-2">जीत आपकी (Jeet Aapki)</h4>
+                    <p class="text-sm text-gray-600 mb-4 flex-grow">शिव खेड़ा जी की यह किताब आपके अंदर एक नई ऊर्जा और कॉन्फिडेंस भर देगी।</p>
+                    <a href="https://amzn.to/4a8lJjh" target="_blank" class="w-full bg-brand-blue hover:bg-blue-800 text-white font-bold py-3 rounded-xl transition shadow flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-cart-shopping"></i> Amazon से खरीदें
+                    </a>
+                </div>
+
+                <!-- Book 4 -->
+                <div class="product-card bg-white border border-gray-200 rounded-3xl p-6 relative flex flex-col items-center text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="absolute -top-4 bg-blue-500 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg">Business & Wealth</div>
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&q=80" alt="Think and Grow Rich" class="h-48 object-cover mb-5 rounded-lg book-img">
+                    <h4 class="font-bold text-lg text-gray-800 mb-2">Think & Grow Rich (Hindi)</h4>
+                    <p class="text-sm text-gray-600 mb-4 flex-grow">सोचिए और अमीर बनिए। दुनिया के सबसे सफल लोगों के 13 नियम।</p>
+                    <a href="https://amzn.to/4a8lJjh" target="_blank" class="w-full bg-brand-blue hover:bg-blue-800 text-white font-bold py-3 rounded-xl transition shadow flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-cart-shopping"></i> Amazon से खरीदें
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area (Small) -->
+    <footer class="bg-gray-900 text-gray-400 py-8 border-t-4 border-brand-orange text-center">
+        <div class="container mx-auto px-4">
+            <h4 class="text-xl font-bold text-white mb-2">Sarwar Computer Center Store</h4>
+            <p class="text-sm mb-4">सीनियर सेकेंडरी स्कूल रोड, पथवारी के सामने, सरवाड़</p>
+            <p class="text-xs text-gray-500">Note: As an Amazon Associate, we earn from qualifying purchases at no extra cost to you.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919251000209" class="float-wa" target="_blank" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 50 });
+    </script>
+</body>
+</html>
