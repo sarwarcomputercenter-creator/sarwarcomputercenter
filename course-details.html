@@ -20,7 +20,7 @@
         .bg-brand-blue { background-color: #0f172a; } .text-brand-blue { color: #0f172a; }
         .bg-brand-orange { background-color: #ea580c; } .text-brand-orange { color: #ea580c; }
 
-        /* Social & Float Buttons (Same as Main Page) */
+        /* Social & Float Buttons */
         .sticky-social { position: fixed; top: 50%; left: 0; transform: translateY(-50%); z-index: 100; display: flex; flex-direction: column; gap: 5px; }
         .sticky-social a { width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; transition: all 0.3s; border-radius: 0 10px 10px 0; box-shadow: 2px 2px 5px rgba(0,0,0,0.3); margin-left: -5px; }
         .sticky-social a:hover { width: 60px; margin-left: 0; }
@@ -56,7 +56,7 @@
     <header class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-50 top-0 border-b border-gray-100">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3 cursor-pointer">
-                <img src="logo%20sarwar%20computer%20center.jpeg?v=9" alt="SCC Logo" class="w-12 h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-brand-orange object-cover bg-white">
+                <img src="logo%20sarwar%20computer%20center.jpeg?v=10" alt="SCC Logo" class="w-12 h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-brand-orange object-cover bg-white">
                 <h1 class="text-xl md:text-2xl font-bold text-brand-blue leading-tight tracking-tight">सरवाड़ कम्प्यूटर<br><span class="text-brand-orange text-xs md:text-sm">सेन्टर</span></h1>
             </a>
             <a href="index.html" class="hidden lg:flex font-bold text-gray-600 hover:text-brand-orange transition"><i class="fa-solid fa-house mr-2"></i> होम पेज पर वापस जाएँ</a>
@@ -69,7 +69,6 @@
         <div class="absolute inset-0 bg-brand-blue/60 bg-gradient-to-t from-brand-blue via-brand-blue/50 to-transparent z-0"></div>
         
         <div class="container mx-auto px-4 text-center relative z-10" data-aos="fade-up">
-            
             <div class="max-w-4xl mx-auto bg-black/60 backdrop-blur-md p-8 md:p-12 rounded-[2rem] border border-white/20 shadow-2xl">
                 
                 <div class="inline-block bg-yellow-400 px-5 py-2 rounded-full text-xs md:text-sm font-bold mb-6 text-gray-900 shadow-md">
@@ -140,7 +139,6 @@
                         <input type="text" id="address" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-orange">
                     </div>
                     
-                    <!-- ✨ NEW: Course and Mode Grid -->
                     <div class="grid md:grid-cols-2 gap-4 md:gap-6 mb-8 mt-2">
                         <div>
                             <label class="block text-sm font-bold mb-2 text-gray-600">कोर्स चुनें (Auto Selected)</label>
@@ -160,6 +158,51 @@
                         <i class="fa-brands fa-whatsapp text-2xl"></i> जानकारी प्राप्त करें
                     </button>
                 </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✨ E-Books Section (Added right after the form) -->
+    <section id="ebooks" class="py-16 md:py-20 bg-gray-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-yellow-500/10 rounded-full blur-[80px]"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-brand-orange/10 rounded-full blur-[80px]"></div>
+
+        <div class="container mx-auto px-4 max-w-6xl relative z-10">
+            <div class="grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
+                <div data-aos="fade-right">
+                    <div class="inline-block bg-yellow-500/20 border border-yellow-500/50 text-yellow-400 px-4 py-1.5 rounded-full text-xs md:text-sm font-bold mb-6 tracking-wide">
+                        📚 स्पेशल ऑफर - स्टूडेंट्स के लिए
+                    </div>
+                    <h3 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight text-white">
+                        क्या आपको <span class="text-yellow-400">किताबें पढ़ने</span> का शौक है?
+                    </h3>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
+                        <strong class="text-yellow-400">200+ बेस्ट सेलर ई-बुक्स (E-Books)</strong> का महा-बंडल – मोटिवेशन, माइंड सेट, सफलता और बिज़नेस ग्रोथ। अपनी सोच और जीवन को बदलने वाली दुनिया की सबसे बेहतरीन किताबें अब एक साथ!
+                    </p>
+                    <div class="bg-white/10 p-5 rounded-2xl border border-white/10 mb-8 inline-block backdrop-blur-sm">
+                        <p class="text-gray-300 text-sm md:text-base mb-1">पूरे बंडल की कीमत:</p>
+                        <div class="flex items-end gap-3">
+                            <span class="text-gray-400 line-through text-xl md:text-2xl font-semibold">₹999</span>
+                            <span class="text-4xl md:text-5xl font-black text-yellow-400">सिर्फ ₹49</span>
+                        </div>
+                    </div>
+                    <br>
+                    <a href="https://pages.razorpay.com/rudradigitalebooks" target="_blank" class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-yellow-500 to-orange-500 text-gray-900 px-8 py-4 rounded-full font-black text-lg md:text-xl shadow-[0_10px_20px_rgba(234,88,12,0.3)] hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-cart-arrow-down"></i> यहाँ क्लिक करें और डाउनलोड करें
+                    </a>
+                </div>
+                
+                <div data-aos="fade-left" class="flex justify-center lg:justify-end">
+                    <a href="https://pages.razorpay.com/rudradigitalebooks" target="_blank" class="block relative group w-full max-w-xs md:max-w-md">
+                        <div class="absolute inset-0 bg-yellow-500 rounded-3xl blur-xl opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                        <img src="bestbooks.jpeg?v=10" alt="200+ Best Seller E-Books Bundle" class="relative z-10 w-full rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-2 border-yellow-500/30 transform group-hover:-translate-y-2 transition duration-500 object-cover">
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
+                            <div class="bg-black/80 text-yellow-400 font-bold px-6 py-3 rounded-full flex items-center gap-2 backdrop-blur-md border border-yellow-500/50 text-lg shadow-2xl">
+                                <i class="fa-solid fa-link"></i> Click to Buy
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -346,7 +389,6 @@
             `;
         });
 
-        // ✨ UPDATED Form Submit: Added Course Mode handling to Email & WhatsApp
         function submitForm(event) {
             event.preventDefault(); 
             
@@ -359,7 +401,7 @@
             const address = document.getElementById('address').value;
             const mobile = document.getElementById('mobile').value;
             const course = document.getElementById('courseSelect').value;
-            const courseMode = document.getElementById('courseMode').value; // Online or Offline
+            const courseMode = document.getElementById('courseMode').value; 
             
             fetch("https://formsubmit.co/ajax/sarwarcomputercenter@gmail.com", {
                 method: "POST",
