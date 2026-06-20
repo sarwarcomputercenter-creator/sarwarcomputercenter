@@ -56,7 +56,7 @@
     <header class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-50 top-0 border-b border-gray-100">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3 cursor-pointer">
-                <img src="logo%20sarwar%20computer%20center.jpeg?v=11" alt="SCC Logo" class="w-12 h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-brand-orange object-cover bg-white">
+                <img src="logo%20sarwar%20computer%20center.jpeg?v=9" alt="SCC Logo" class="w-12 h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-brand-orange object-cover bg-white">
                 <h1 class="text-xl md:text-2xl font-bold text-brand-blue leading-tight tracking-tight">सरवाड़ कम्प्यूटर<br><span class="text-brand-orange text-xs md:text-sm">सेन्टर</span></h1>
             </a>
             <a href="index.html" class="hidden lg:flex font-bold text-gray-600 hover:text-brand-orange transition"><i class="fa-solid fa-house mr-2"></i> होम पेज पर वापस जाएँ</a>
@@ -64,14 +64,12 @@
         </div>
     </header>
 
-    <!-- ✨ Dynamic Hero Section (Fixed Text Visibility & Added Online/Offline Banner) -->
+    <!-- Dynamic Hero Section -->
     <section id="dynamicHero" class="pt-32 pb-16 md:pt-40 md:pb-20 relative overflow-hidden">
-        <!-- हल्का डार्क ओवरले ताकि डिज़ाइन प्रीमियम लगे -->
         <div class="absolute inset-0 bg-brand-blue/60 bg-gradient-to-t from-brand-blue via-brand-blue/50 to-transparent z-0"></div>
         
         <div class="container mx-auto px-4 text-center relative z-10" data-aos="fade-up">
             
-            <!-- डार्क ग्लास बॉक्स (इससे टेक्स्ट 100% साफ दिखेगा) -->
             <div class="max-w-4xl mx-auto bg-black/60 backdrop-blur-md p-8 md:p-12 rounded-[2rem] border border-white/20 shadow-2xl">
                 
                 <div class="inline-block bg-yellow-400 px-5 py-2 rounded-full text-xs md:text-sm font-bold mb-6 text-gray-900 shadow-md">
@@ -86,7 +84,6 @@
                     इस कोर्स की पूरी जानकारी नीचे दी गई है।
                 </p>
 
-                <!-- ✨ NEW: ONLINE/OFFLINE Availability Highlight -->
                 <div class="bg-gradient-to-r from-green-500 to-emerald-600 text-white font-black px-6 py-2 md:py-3 rounded-full mb-8 inline-block shadow-[0_5px_15px_rgba(34,197,94,0.4)] tracking-wide border-2 border-green-300">
                     <i class="fa-solid fa-laptop-house text-lg mr-1"></i> ONLINE / OFFLINE Course Available
                 </div>
@@ -99,7 +96,7 @@
         </div>
     </section>
 
-    <!-- ✨ Dynamic Syllabus Section with Detailed AI Descriptions -->
+    <!-- Dynamic Syllabus Section -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4 max-w-5xl">
             <div class="text-center mb-12" data-aos="fade-up">
@@ -143,10 +140,20 @@
                         <input type="text" id="address" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-orange">
                     </div>
                     
-                    <div class="mb-8">
-                        <label class="block text-sm font-bold mb-2 text-gray-600">कोर्स चुनें (Auto Selected)</label>
-                        <!-- Form will automatically lock the course name selected by user -->
-                        <input type="text" id="courseSelect" readonly required class="w-full px-4 py-3 bg-gray-200 border border-gray-300 text-brand-blue rounded-xl font-bold shadow-inner">
+                    <!-- ✨ NEW: Course and Mode Grid -->
+                    <div class="grid md:grid-cols-2 gap-4 md:gap-6 mb-8 mt-2">
+                        <div>
+                            <label class="block text-sm font-bold mb-2 text-gray-600">कोर्स चुनें (Auto Selected)</label>
+                            <input type="text" id="courseSelect" readonly required class="w-full px-4 py-3 bg-gray-200 border border-gray-300 text-brand-blue rounded-xl font-bold shadow-inner">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-2 text-gray-600">कोर्स मोड (Online / Offline)</label>
+                            <select id="courseMode" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-orange font-bold text-brand-blue cursor-pointer">
+                                <option value="">-- मोड चुनें --</option>
+                                <option value="Online">🟢 Online (ऑनलाइन)</option>
+                                <option value="Offline">🏢 Offline (ऑफलाइन - सेन्टर पर)</option>
+                            </select>
+                        </div>
                     </div>
 
                     <button type="submit" id="submitBtn" class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white font-bold py-4 rounded-xl hover:from-green-600 hover:to-green-700 transition shadow-lg flex justify-center items-center gap-2 text-lg transform hover:-translate-y-1">
@@ -170,7 +177,7 @@
     <script>
         AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 50 });
 
-        // 🧠 ✨ NEW: Dynamic Course Database With Detailed AI Descriptions
+        // 🧠 Dynamic Course Database With Detailed AI Descriptions
         const coursesData = {
             "राजस्थान सरकार महिलाओं के लिए निःशुल्क Free Computer Course": {
                 title: "महिलाओं के लिए निःशुल्क कोर्स (RS-CIT/RS-CFA)",
@@ -309,24 +316,20 @@
             }
         };
 
-        // URL से कोर्स का नाम पढ़ना
         const urlParams = new URLSearchParams(window.location.search);
         let courseName = urlParams.get('course');
         
-        // अगर कोर्स का नाम नहीं मिला तो डिफ़ॉल्ट RS-CIT दिखाना
         if(!courseName || !coursesData[courseName]) {
             courseName = "RS-CIT";
         }
 
         const data = coursesData[courseName];
 
-        // 🖼️ पेज पर डेटा सेट करना
         document.getElementById('dynamicHero').style.backgroundImage = `url('${data.image}')`;
         document.getElementById('courseTitle').innerText = data.title;
         document.getElementById('courseDesc').innerText = data.desc;
         document.getElementById('courseSelect').value = courseName; 
 
-        // ✨ कोर्स के सिलेबस पॉइंट्स को ग्रिड में इंजेक्ट करना
         const syllabusGrid = document.getElementById('syllabusGrid');
         data.points.forEach((point, index) => {
             let delay = index * 100;
@@ -343,7 +346,7 @@
             `;
         });
 
-        // ✨ Form Submit: Sends to Email AND WhatsApp automatically
+        // ✨ UPDATED Form Submit: Added Course Mode handling to Email & WhatsApp
         function submitForm(event) {
             event.preventDefault(); 
             
@@ -356,6 +359,7 @@
             const address = document.getElementById('address').value;
             const mobile = document.getElementById('mobile').value;
             const course = document.getElementById('courseSelect').value;
+            const courseMode = document.getElementById('courseMode').value; // Online or Offline
             
             fetch("https://formsubmit.co/ajax/sarwarcomputercenter@gmail.com", {
                 method: "POST",
@@ -365,13 +369,14 @@
                     "पता (Address)": address,
                     "मोबाइल नंबर (Mobile)": mobile,
                     "जानकारी चाहिए (Course)": course,
-                    "_subject": `🎓 Inquiry for ${course}`
+                    "कोर्स मोड (Mode)": courseMode,
+                    "_subject": `🎓 Inquiry for ${course} (${courseMode})`
                 })
             })
             .then(response => response.json())
             .then(data => {
                 const whatsappNumber = "919251000209";
-                const message = `*New Course Inquiry!* %0A%0A👤 *Name:* ${name} %0A📍 *Address:* ${address} %0A📱 *Mobile:* ${mobile} %0A💻 *Course Details Needed:* ${course} %0A%0A_Sent via Course Page_`;
+                const message = `*New Course Inquiry!* %0A%0A👤 *Name:* ${name} %0A📍 *Address:* ${address} %0A📱 *Mobile:* ${mobile} %0A💻 *Course Details Needed:* ${course} %0A🖥️ *Mode:* ${courseMode} %0A%0A_Sent via Course Page_`;
                 
                 window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
                 document.getElementById('admissionForm').reset();
@@ -381,7 +386,7 @@
             .catch(error => {
                 alert("जानकारी सबमिट हो गई है! अब आपको WhatsApp पर भेजा जा रहा है...");
                 const whatsappNumber = "919251000209";
-                const message = `*New Course Inquiry!* %0A%0A👤 *Name:* ${name} %0A📍 *Address:* ${address} %0A📱 *Mobile:* ${mobile} %0A💻 *Course:* ${course}`;
+                const message = `*New Course Inquiry!* %0A%0A👤 *Name:* ${name} %0A📍 *Address:* ${address} %0A📱 *Mobile:* ${mobile} %0A💻 *Course:* ${course} %0A🖥️ *Mode:* ${courseMode}`;
                 window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
                 btn.innerHTML = originalText;
                 btn.disabled = false;
