@@ -43,24 +43,41 @@
         /* Hero Image Overlay styling */
         #dynamicHero { background-size: cover; background-position: center; background-attachment: fixed; }
     </style>
-</head>
-<body>
-
-    <div class="sticky-social">
-        <a href="https://www.youtube.com/@sarwarcomputer" target="_blank" class="social-yt" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://www.instagram.com/sarwarcomputercenter/" target="_blank" class="social-ig" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" target="_blank" class="social-fb" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://maps.google.com/maps?q=26.0650966,75.0154186&t=&z=17&ie=UTF8&iwloc=&output=embed" target="_blank" class="social-map" title="Google Maps"><i class="fa-solid fa-map-location-dot"></i></a>
-    </div>
-
+<!-- Header -->
     <header class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-50 top-0 border-b border-gray-100">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3 cursor-pointer">
-                <img src="logo%20sarwar%20computer%20center.jpeg?v=11" alt="SCC Logo" class="w-12 h-12 md:w-14 md:h-14 rounded-full shadow-md border-2 border-brand-orange object-cover bg-white">
-                <h1 class="text-xl md:text-2xl font-bold text-brand-blue leading-tight tracking-tight">सरवाड़ कम्प्यूटर<br><span class="text-brand-orange text-xs md:text-sm">सेन्टर</span></h1>
+        <div class="container mx-auto px-2 md:px-4 py-3 flex justify-between items-center">
+            
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-2 md:gap-3 cursor-pointer">
+                <img src="logo%20sarwar%20computer%20center.jpeg?v=12" alt="SCC Logo" class="w-10 h-10 md:w-14 md:h-14 rounded-full shadow-md border-2 border-brand-orange object-cover bg-white">
+                <h1 class="text-lg md:text-2xl font-bold text-brand-blue leading-tight tracking-tight">सरवाड़ कम्प्यूटर<br><span class="text-brand-orange text-[10px] md:text-sm">सेन्टर</span></h1>
             </a>
-            <a href="index.html" class="hidden lg:flex font-bold text-gray-600 hover:text-brand-orange transition"><i class="fa-solid fa-house mr-2"></i> होम पेज पर वापस जाएँ</a>
-            <a href="#admission" class="bg-brand-orange text-white px-4 py-2 md:px-6 md:py-2.5 rounded-full font-bold hover:bg-orange-600 transition shadow-lg text-xs md:text-base">पूछताछ करें</a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex gap-6 xl:gap-8 font-semibold text-gray-600 items-center">
+                <a href="index.html#home" class="hover:text-brand-orange transition">Home</a>
+                <a href="index.html#courses" class="hover:text-brand-orange transition">Courses</a>
+                <a href="index.html#ebooks" class="hover:text-brand-orange transition">E-Books</a>
+                <a href="#contact" class="hover:text-brand-orange transition">Contact</a>
+            </nav>
+
+            <!-- Action Buttons (Visible on Mobile & Desktop) -->
+            <div class="flex items-center gap-2 md:gap-4 mobile-header-actions">
+                
+                <!-- ✨ NEW: SCC Store Premium Motion Button -->
+                <a href="shop.html" class="relative group flex items-center gap-1.5 md:gap-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white px-3 py-1.5 md:px-5 md:py-2.5 rounded-full font-bold hover:scale-105 transition-all duration-300 shadow-[0_5px_15px_rgba(236,72,153,0.4)] text-xs md:text-sm border border-pink-400/50">
+                    <i class="fa-solid fa-cart-shopping group-hover:animate-bounce"></i> <span class="hidden sm:inline">SCC</span> Store
+                    
+                    <!-- Blinking Notification Dot -->
+                    <span class="absolute -top-1 -right-1 flex h-3 w-3 md:h-4 md:w-4">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-3 w-3 md:h-4 md:w-4 bg-yellow-500 border border-white"></span>
+                    </span>
+                </a>
+
+                <!-- Admission/Inquiry Button -->
+                <a href="#admission" class="bg-brand-orange text-white px-3 py-1.5 md:px-6 md:py-2.5 rounded-full font-bold hover:bg-orange-600 transition shadow-lg shadow-orange-500/30 hover:scale-105 transform duration-300 text-xs md:text-base whitespace-nowrap">पूछताछ करें</a>
+            </div>
         </div>
     </header>
 
