@@ -271,6 +271,21 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 50 });
+          // --- Security: Anti-Copy & Anti-Inspect ---
+        
+        // राइट क्लिक (Right Click) बंद करें
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        
+        // कीबोर्ड शॉर्टकट बंद करें (F12, Ctrl+U, Ctrl+Shift+I आदि)
+        document.onkeydown = function(e) {
+            if(e.keyCode == 123) { return false; } // F12 Disable
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { return false; } // Ctrl+Shift+I
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { return false; } // Ctrl+Shift+J
+            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { return false; } // Ctrl+U (View Source)
+            if(e.ctrlKey && e.keyCode == 'C'.charCodeAt(0)) { return false; } // Ctrl+C (Copy)
+        }
+    </script>
+
     </script>
 </body>
 </html>
